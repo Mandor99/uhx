@@ -1,0 +1,400 @@
+.ceo {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+      rgba(222, 229, 237, 0.1),
+      rgba(222, 229, 237, 0.1)
+    ),
+    url("../imgs/background/bg-service.png") no-repeat center/cover;
+  .custom-row {
+    @include responsiveMax(tab) {
+      text-align: center;
+      flex-direction: column-reverse !important;
+    }
+  }
+
+  .ceo-word {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 3rem;
+
+    @include responsiveMin(tab) {
+      font-size: 1.2rem !important;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .img-ceo {
+    height: 400px;
+    object-fit: contain;
+  }
+}
+
+.who {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .cards-p {
+    padding-top: 3rem;
+
+    @include responsiveMax(tab) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      gap: 3rem;
+    }
+
+    & .card {
+      @include responsiveMax(tab) {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .card-content {
+    @include responsiveMax(tab) {
+      padding-bottom: 3.5rem !important;
+      padding: 3.5rem !important;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 20%;
+    // transform: translateX(0);
+  }
+  100% {
+    left: -100%;
+    // transform: translateX(-50%);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pause {
+  animation-play-state: paused;
+}
+.running {
+  animation-play-state: running;
+}
+/* src/styles/main.scss or your main CSS file */
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.exp {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & .txt {
+    padding: 1rem 0 !important;
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    width: 45% !important;
+    margin: 0 auto !important;
+
+    @include responsiveMax(tab) {
+      width: 50% !important;
+    }
+  }
+
+  & .clients {
+    min-width: 900px;
+    height: 120px;
+    overflow: hidden;
+
+    .client-img {
+      height: 60px;
+      object-fit: cover;
+    }
+  }
+
+  & .marquee {
+    gap: 3rem;
+    min-width: 1024px;
+    width: 200%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100px;
+  }
+}
+
+.services,
+.how-work {
+  overflow: hidden;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(
+      rgba(222, 229, 237, 0.1),
+      rgba(222, 229, 237, 0.1)
+    ),
+    url("../imgs/background/bg-service.png") no-repeat center/cover;
+
+  & .row {
+    @include responsiveMax(tab) {
+      gap: 3rem;
+      flex-direction: row !important;
+    }
+  }
+
+  .service {
+    &-img {
+      // width: 340px;
+      height: 250px;
+      object-fit: contain;
+    }
+    &-wrapper {
+      margin-top: 3rem;
+    }
+    &-txt {
+      padding: 1rem 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+
+      @include responsiveMax(tab) {
+        padding: 1rem;
+        // text-align: start;
+      }
+    }
+  }
+  & .content {
+    @include responsiveMax(tab) {
+      text-align: center;
+    }
+  }
+}
+
+.works {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url("../imgs/background/header2.png") fixed no-repeat center/cover;
+
+  &-btn {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-secondary);
+    }
+  }
+}
+
+.how-work {
+  & .row {
+    @include responsiveMax(tab) {
+      gap: 0rem;
+      flex-direction: row !important;
+    }
+  }
+
+  & .work-row {
+    @include responsiveMax(tab) {
+      gap: 3rem;
+    }
+  }
+
+  & .how-list {
+    list-style: none;
+    text-align: start !important;
+
+    & .pullet {
+      @include responsiveMax(tab) {
+        font-size: 1rem !important;
+        display: inline-block !important;
+      }
+      &::before {
+        // width: .4rem;
+        // height: .4rem;
+        background-color: var(--color-text);
+
+        @include responsiveMax(tab) {
+          margin-left: -15px;
+        }
+      }
+    }
+  }
+}
+
+.our-clients {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & .slider-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1.5rem !important;
+  }
+
+  & .client-fig {
+    padding: 2rem 0rem 4rem 0rem; // top right bottom left
+    gap: 3rem;
+    height: 275px;
+  }
+
+  & .client-logo {
+    width: 237px !important;
+    height: 85px;
+    object-fit: contain;
+  }
+  .owl-nav .owl-next,
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: 60px !important;
+
+    &:hover {
+      background-color: initial !important;
+      color: initial !important;
+    }
+  }
+  .owl-nav .owl-next {
+    right: -45px;
+  }
+  .owl-nav .owl-prev {
+    left: -45px;
+  }
+}
+
+.features {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(
+      rgba(var(--color-primary-rgb), 0.7),
+      rgba(var(--color-primary-rgb), 0.7)
+    ),
+    url("../imgs/background/header3.png") no-repeat center/cover;
+  text-align: center;
+
+  .feature-text {
+    width: 65%;
+    padding-bottom: 3rem;
+
+    @include responsiveMax(tab) {
+      width: 90% !important;
+    }
+  }
+
+  & .carousel.slide {
+    min-height: 150px;
+
+    .carousel-indicators [data-bs-target] {
+      transition: all 0.3s ease;
+      background-color: rgba(var(--color-text2-rgb), 0.7);
+      width: 15px;
+      height: 5px;
+      border-radius: 999px !important;
+      border: none;
+    }
+
+    .carousel-indicators .active {
+      width: 33px;
+      background: var(--color-text2);
+    }
+  }
+}
+
+.contact {
+  overflow: hidden;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &-form {
+    border-radius: 10px;
+
+    @include responsiveMax(tab) {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .img-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../imgs/background/bg-form.jpg") no-repeat center/cover;
+    border-radius: 10px;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  &-img {
+    height: 100%;
+    border-radius: 10px;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  .form-wrapper {
+    padding: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .submit-btn {
+    @include responsiveMax(tab) {
+      width: 100% !important;
+    }
+  }
+}
+
+.slogan {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &-items {
+    padding-top: 3rem;
+
+    @include responsiveMax(tab) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      gap: 2rem;
+    }
+  }
+
+  &-figure {
+    padding: 2rem 0rem 2rem 0rem; // top right bottom left
+    gap: 2rem;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9) !important;
+
+    &:hover {
+      // animation: zoom 2s linear;
+      transform: scale(1) !important;
+    }
+
+    @include responsiveMin(mobile) {
+      width: 45%;
+    }
+    @include responsiveMax(mobile) {
+      width: 100%;
+    }
+    @include responsiveMin(tab) {
+      width: auto;
+    }
+  }
+
+  &-img {
+    width: 237px !important;
+    height: 85px;
+    object-fit: contain;
+  }
+}

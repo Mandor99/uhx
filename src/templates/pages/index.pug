@@ -1,0 +1,156 @@
+extends ../layout.pug
+
+block content
+   include ../components/header
+   section.slogan.bg-gray2
+      .container
+         +sectionTitle('بيت الخبراء الموحد')
+         .slogan-items.g-3.justify-content-between.d-flex.flex-row.flex-wrap
+            -const slogan1 = {img:'deal', caption: ['تعاون', 'Cooperation'], dataAos:'fade-right'}
+            -const slogan2 = {img:'content-strategy', caption: ['استراتيجية', 'Strategy'], dataAos:'fade-up'}
+            -const slogan3 = {img:'creativity', caption: ['ابتكار', 'Innovation'], dataAos:'fade-down'}
+            -const slogan4 = {img:'growth', caption: ['نجاح', 'Success'], dataAos:'fade-left'}
+            -const slogans = [slogan1, slogan2, slogan3, slogan4]
+            each slogan in slogans
+               figure.slogan-figure.text-center.shadow.row.flex-column.align-items-center(data-aos=`${slogan.dataAos}`)
+                  img.img-fluid.slogan-img(src=`./imgs/icons/${slogan.img}.png`, alt="client")
+                  figcaption.fs-4.fw-bold.color-primary
+                     h5 #{slogan.caption[0]}
+                     h5 #{slogan.caption[1]}
+   section.ceo.bg-gray2
+      .container
+         +sectionTitle('كلمة الرئيس التنفيذي')
+         .custom-row.row.justify-content-between
+            .col-12.col-lg-8
+               p.ceo-word(data-aos='fade-right')
+                  span إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من أولوياتنا<span class='color-primary'> لنضمن بمشيئة الله الإستقرار و الاستمرار و النجاح لأعمالنا و منشاتنا</span>. و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن <span class='color-primary'>الوصول الى تحقيق هذه الأهداف يعتمد على اتباع خطوات صحيحة و واضحة</span> و مجربة و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا الى تحقيق المستهدفات. و بناءاً عليه قمنا بتشييد <span class='color-primary fw-bold'>”بيت الخبراء الموحد”</span> ليجتمع قيه خبراءنا مع رواد الأعمال و أصحاب المنشآت و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة
+
+            .col-12.col-lg-4
+               img.img-fluid.img-ceo(src="./imgs/background/ceo.png", alt="CEO", data-aos='zoom-in-left')
+   section.who
+      .container
+         +sectionTitle('في بيتنا خبير')
+         .row.row-cols-1.row-cols-lg-3.g-4.cards-p
+            -const card1 = {img:'grid1', title:'التأسيس', body: 'من خلال خبراتنا كمؤسسين لبيت الخبراء أصبح لدينا الكثير من الأصدقاء و الزملاء و المعارف في جميع المجالات و بالتالي مهما كان مشروعك أو هدفك سنبحث لك في بيتنا ما يلبي احتياجاتك أو قد نستضيف لمشروعك خصيصا من يدعم طلبك و يلبي رغبتك.',extra: '', dataAos:'flip-left'}
+            -const card2 = {img:'grid2', title: 'الأهداف', body: 'نحن نمنح خبراءنا الفرصة ليمارسوا شغفهم من خلال المشاركة بخبراتهم ونمنح عملاءنا الجودة و سرعة التنفيذ والنتيجة التي تحقق طموحاتهم و أهدافهم دون تعقيدات و مقدمات.', extra:'', dataAos:'flip-up'}
+            -const card3 = {img:'grid3', title: 'رؤيتنا', body: 'هي المساهمة في صناعة مؤسسات وطنية تعمل بمفهوم الاستدامة و الاستمرارية ,تساهم بشكل مباشر في دعم ركائز الإقتصاد الوطني,من خلال تطبيق معايير العمل المؤسسي و إعادة الهيكلية و وضع قواعد متينة و بنية تحتية صلبة وذلك بتطبيق مجموعة من الخدمات و البرامج التي تجعل المنشأة لديها بيئة عمل جيدة و احترافية و خطة استراتيجية وهدف واحد و هو', extra: '"الحوكمة والاستدامة"', dataAos: 'flip-right'}
+            -const cards = [card1, card2, card3]
+            each card in cards
+               .col
+                  .card.h-100.shadow.border-0(data-aos=`${card.dataAos}`)
+                     img.card-img-top(src=`./imgs/background/${card.img}.png`, alt='card image', height='269px')
+                     .card-body.text-center.card-content
+                        h5.card-title.color-primary.fw-bold #{card.title}
+                        p.card-text.lh-lg #{card.body}
+                           span.d-inline-block.color-secondary #{card.extra}
+   section.exp.bg-gray2.overflow-x-hidden
+      //- .container
+      .exp-body.text-center
+         h3.fs-bold.h3.mb-0.color-primary.text-uppercase الخبرات
+         p.txt(data-aos='zoom-in-up') لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات العمل التي إنضم اليها خبراءنا خلال مسيرتهم المهنية
+      #scrollableElement.clients.position-relative.overflow-hidden.w-100
+         .marquee.d-flex.justify-content-between
+            -const clientsLogo = ['94','95', '96', '97', '98', '99', '100', '101', '102']
+            each client in clientsLogo
+               img#marquee.img-fluid.client-img(src=`./imgs/exprience_logos/Asset ${client}.png`, alt="client logo")
+      .exp-btn.text-center.pt-4
+         a.exp-btn.btn.circle-btn.button-primary(href='#') مشاهدة المزيد
+
+   section.services
+      .container
+         +sectionTitle('خدماتنا')
+         .row.justify-content-between.mt-4.service-wrapper
+            .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service1-2.png", alt="service 1", data-aos='zoom-out-up')
+            .col-12.col-lg-8: .content(data-aos='zoom-in-left')
+               h3.fs-bold.h3.mb-0.color-primary.text-uppercase صناعة قصص النجاح
+               p.service-txt.m-0.w-100
+                  span عندما تصادفك عقبة أو لديك فكرة و ربما تطمح لتطوير معين في قطاع ما أو على مستوى المنشأة فان <span class='fw-bold'>بيت الخبراء</span> يفتح ابوابه لأي تطوير أو تغيير و يأخذ معك رحلة التغيير من البداية. إن كل عميل لبيت الخبراء الموحد هو ضيف يأخذ حقه بالكامل من الإنصات و المناقشة حتى تتكون الفكرة بالكامل.
+         .row.flex-row-reverse.justify-content-between.mt-4
+            .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service2-2.png", alt="service 1", data-aos='zoom-out-down')
+            .col-12.col-lg-8: .content(data-aos='zoom-in-right')
+               h3.fs-bold.h3.mb-0.color-primary.text-uppercase تحقيق الاستدامة
+               p.service-txt.m-0.w-100
+                  span و لأن نكون بيت كل منشأة ترغب في إعادة ترتيب أوراقها و تتجه نحو عمل مؤسسي منظم من خلال تطبيق معايير الجودة و الحوكمة و التطوير الذي يتناسب مع التطلعات الوطنية و الدولية و التي تنقل المنشآت بمختلف تصنيفها سواءاً الناشئة او المنشآت المتوسطة و الصغيرة لمستوى <span class='fw-bold'>أكثر استقراراً و ثباتاً.</span>
+   section.works
+      .container
+         h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
+         .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-between.mt-4
+            -const work1 = {img: '380', caption: 'المساهمات العقارية'}
+            -const work2 = {img: '390', caption: 'التطوير العقاري'}
+            -const work3 = {img: '379', caption: 'تطوير الاعمال'}
+            -const work4 = {img: '389', caption: 'تطوير المنتجات'}
+            -const work5 = {img: '378', caption: 'الدراسات المالية'}
+            -const work6 = {img: '388', caption: 'الالتزام و ادارة المخاطر'}
+            -const work7 = {img: '386', caption: 'التمويل و الصكوك الاسلامية'}
+            -const work8 = {img: '377', caption: 'ادارة الاملاك العقارية'}
+            -const works = [work1, work2, work3, work4, work5, work6, work7, work8]
+            each work in works
+               figure.work-special.text-center.col(data-aos='zoom-in')
+                  img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.png`, alt="asset", width="85", height="85")
+                  figcaption.lh-base.fs-5.text-white #{work.caption}
+         .exp-btn.text-center.pt-4
+            a.works-btn.btn.circle-btn.button-light(href='#') مشاهدة المزيد
+   section.how-work
+      .container
+         +sectionTitle('آلية العمل')
+         .work-row.row.justify-content-between.mt-4
+            .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/how-work.png", alt="service 1", data-aos='zoom-in')
+            .col-12.col-lg-8: .content(data-aos='fade-left')
+               //- h3.fs-bold.h3.mb-0.color-primary.text-uppercase success stories
+               p.service-txt.m-0.w-100
+                  span سوف نستضيفك لنتعرف على بعضنا بشكل  افضل و لنسمع  منك ما يدور في راسك  من طموحات و بناءا عليه  سنقول لك ما نفكر فيه لنحقق هذه الطموحات  وما هي افضل الممارسات.
+               ul.list-style-none.row.row-cols-1.row-cols-md-2.how-list
+                  -const list3 = ["الية تنفيذ الفكرة", "الخبير او الفريق المناسب لهذه المهمة", "مدة التنفيذ و التكلفة", "ماهي الخبرات التي تناسب مشروعك", "ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل"]
+                  each item in list3
+                     li.pullet.fs-5.fw-medium.lh-lg.flex-fill.d-flex.align-items-center #{item}
+   section.our-clients
+      .container
+         +sectionTitle('ابرز عملاءنا')
+         .slider-wrapper: .clients-slider.owl-carousel.owl-theme
+            -const client1 = {img: "1", title: "قرضي الرقمية"}
+            -const client2 = {img: "2", title: "بناء الاعمال الوطنية"}
+            -const client3 = {img: "3", title: "امكان العربية"}
+            -const client4 = {img: "4", title: "امداد لتموين الطعام"}
+            -const client5 = {img: "5", title: "مدرسة الاوراق الخضراء"}
+            -const clients = [client1, client2, client3, client4, client5]
+            each client in clients
+               figure.slider-figure.text-center.item.client-fig.shadow.d-flex.flex-column.align-items-center
+                  img.img-fluid.client-logo(src=`./imgs/logos/client${client.img}.png`, alt="client")
+                  figcaption.fs-4.fw-bold.color-primary #{client.title}
+   section.features
+      .container
+         h3.h3.mb-0.text-white.text-uppercase.mb-4(data-aos='fade-down') بماذا نتميز ...؟
+         #features-carousel.carousel.slide(data-bs-ride="carousel")
+            .carousel-indicators
+               button.active(type='button', data-bs-target='#features-carousel', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+               button(type='button', data-bs-target='#features-carousel', data-bs-slide-to='1', aria-label='Slide 2')
+            .carousel-inner
+               .carousel-item.active
+                  //- .carousel-caption.d-md-block
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن الانفراد الذي اضفناه في بيت الخبراء الموحد هي خدمة الاشراف الاستشاري لقد وضعنا انفسنا في صفك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعليا.
+
+               .carousel-item
+                  //- .carousel-caption.d-md-block
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text Sإن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها.ولذلك خبرائنا يضعون حجر الاساس بعلمهم, يوثقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم.حتى يكن لدينا صرحا من المعلومات يحمي أهدافنا.
+
+   section.contact
+      .container
+         +sectionTitle('نحن معك دائما')
+         .contact-form.mt-4.shadow
+            .row.row-cols-1.row-cols-lg-2.justify-content-between(data-aos='zoom-out')
+               .img-wrapper.d-none.d-lg-block
+               .form-wrapper
+                  .content.py-4
+                     h3.text-center.colot-primary طلب استشارة
+                     p.text-center.colot-primary.lh-base
+                        span شكراً على اهتمامك بـ<span class=fw-bold>"بيت الخبراء الموحد"!</span> تواصل معنا وشاركنا أسئلتك واقتراحاتك وأفكارك، فتواصلك يسرّنا دوماً
+                  form.form.row.g-3
+                     .col-12.col-lg-6: input.form-control(type="text" placeholder="الاسم الاول" aria-label="First name")
+                     .col-12.col-lg-6: input.form-control(type="text" placeholder="الاسم الاخير" aria-label="Last name")
+                     .col-12: input.form-control(type="email" placeholder="البريد الااكتروني")
+                     .col-12: input.form-control(type="tel" name="phone" placeholder="رقم الهاتف" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required)
+                     .col-12: textarea.form-control(rows="5", placeholder='تفاصيل الاستشارة')
+                     button.btn.mx-auto.button-primary.w-50.mt-4.submit-btn(type="submit") ارسال
+
+
+   include ../components/footer

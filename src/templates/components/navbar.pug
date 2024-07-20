@@ -1,0 +1,23 @@
+nav.navbar.fixed-top.navbar-expand-lg.bg-primary
+  .container
+    a.navbar-brand.brand(href='/')
+        img.logo-dimension(src="./imgs/logos/UHX white.svg", alt="uhx logo")
+    button.navbar-toggler.collapsed.position-relative.d-flex.d-lg-none.flex-column.justify-content-around.icon-button(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.toggler-icon.top-bar
+      span.toggler-icon.mid-bar
+      span.toggler-icon.bottom-bar
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.navbar-nav-scroll.me-auto.mb-2.mb-lg-0.gap-3
+        -const navItems = ["الرئيسية", "من نحن", "الخبرات", "الخبرات", "الية العمل", "عملاءنا"]
+        each item in navItems
+          li.nav-item
+            a.nav-link.text-white.fs-5.fw-normal.underline-link.px-0.text-uppercase.text-center.pb-3(aria-current='page', href='#', data-toggle='collapse') #{item}
+
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle.text-white.fs-5.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+            | نحن معك دائما
+          ul.dropdown-menu.bg-primary-dark.py-0
+            -const dropdownItems = ["طلب استشارة", "انضم كخبير","التراخيص"]
+            each item in dropdownItems
+              li.text-center
+                a.dropdown-item.text-white.fs-5.fw-normal.text-uppercase.text-center.circle-effect(href='#') #{item}

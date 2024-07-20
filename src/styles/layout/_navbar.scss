@@ -1,0 +1,142 @@
+.brand {
+  min-height: 70px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 0;
+  padding: 10px 0;
+  transition: all 0.3s;
+  word-break: break-word;
+  z-index: 1;
+}
+
+.navbar-nav.navbar-nav-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  &::after {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background-image: url("../imgs/icons/iconamoon_arrow-up-2.png");
+  }
+}
+
+.logo-dimension {
+  transition: all 0.3s ease;
+  width: 250px; //215
+  height: 3rem;
+  object-fit: cover;
+}
+
+.circle-effect {
+  &:hover {
+    background-color: lighten($color: #004637, $amount: 5);
+  }
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+  min-height: 100px;
+
+  &-shrink {
+    min-height: 85px;
+
+    & .logo-dimension {
+      width: 180px;
+      height: 2.5rem;
+    }
+  }
+
+  &-toggler {
+    border: 0;
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+    }
+
+    &-icon:focus {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+    }
+    // when clicked
+    & .top-bar {
+      transform: rotate(45deg);
+    }
+    & .mid-bar {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    & .bottom-bar {
+      transform: rotate(-45deg);
+    }
+
+    // when closed
+    &.collapsed {
+      & .top-bar {
+        margin-top: -20px;
+        transform: rotate(0);
+      }
+      & .mid-bar {
+        margin-top: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      & .bottom-bar {
+        margin-top: 20px;
+        transform: rotate(0);
+      }
+      & .toggler-icon {
+        background-color: #fff;
+      }
+    }
+  }
+
+  & .toggler-icon {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+  }
+}
+
+.icon-button {
+  width: 20px;
+  height: 20px;
+}
+
+// .underline-link {
+//     &:not(.dropdown-toggle):not(.dropdown-item)::after {
+//         content: "";
+//         z-index: 0;
+//         max-width: 100%;
+//         bottom: 10px;
+//         right: 0;
+//         left: 0;
+//         position: absolute;
+//         height: 1px;
+//         background-color: currentColor;
+//         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//     &:not(.dropdown-toggle):not(.dropdown-item):hover::after {
+//         max-width: 0;
+//         left: 100%;
+//     }
+// }

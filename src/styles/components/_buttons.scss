@@ -1,0 +1,32 @@
+%button {
+    padding: .6rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .1s ease;
+    text-transform: capitalize;
+}
+.rounded-button {
+    border-radius: 999px;
+}
+.button-primary {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    @extend .rounded-button;
+    @extend %button;
+
+    &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+    }
+}
+.button-light {
+    background: var(--color-gray);
+    color: var(--color-primary);
+    @extend .rounded-button;
+    @extend %button;
+
+    &:hover {
+        color: var(--color-gray);
+        background-color: var(--color-primary);
+    }
+}

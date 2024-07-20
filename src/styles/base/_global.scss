@@ -1,0 +1,145 @@
+:root {
+  --color-primary: #004637;
+  --color-primary-rgb: 0, 70, 55;
+  --color-secondary: #04f280;
+  --color-gray: #f4fffb;
+  --color-text: #494949;
+  --color-text2: #f2da45;
+  --color-text2-rgb: 242, 218, 69;
+  --color-primary-dark: #0b724c;
+  --color-gray2: #f2f2f2;
+  // #24282b ;
+  --lg-padding: 6rem;
+  --md-padding: 3rem;
+  --md-margin: 2.5rem;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  min-height: 130vh;
+  overflow-x: hidden;
+  & > *:not(nav) {
+    overflow-x: hidden !important;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.hidden {
+  display: none !important;
+}
+
+.loader {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      rgba(var(--color-primary-rgb), 0.8),
+      rgba(var(--color-primary-rgb), 0.8)
+    ),
+    url("../imgs/background/header-home.png") fixed no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-img {
+    width: 400px;
+    animation: pulse 2s linear infinite;
+  }
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+.color-primary {
+  color: var(--color-primary) !important;
+}
+.bg-primary-dark {
+  background-color: var(--color-primary-dark) !important;
+}
+.color-primary-dark {
+  color: var(--color-primary-dark) !important;
+}
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+.color-secondary {
+  color: var(--color-secondary) !important;
+}
+.color-gray {
+  color: var(--color-gray) !important;
+}
+.color-gray2 {
+  color: var(--color-gray2);
+}
+.bg-gray2 {
+  background-color: var(--color-gray2);
+}
+.color-text {
+  color: var(--color-text) !important;
+}
+.color-text2 {
+  color: var(--color-text2) !important;
+}
+
+.underline-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: 0;
+    max-width: 100%;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    background-color: currentColor;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::after {
+    max-width: 0;
+    left: 100%;
+  }
+}
+
+p > span {
+  color: var(--color-primary);
+}
+
+.scaled {
+  transform: scale(1.5);
+}
+
+.pullet {
+  &:before {
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    height: 0.3rem;
+    width: 0.3rem;
+    margin-inline-end: 0.5rem;
+    background-color: #fff;
+  }
+}

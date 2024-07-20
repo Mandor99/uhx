@@ -1,0 +1,29 @@
+.banner {
+  position: relative;
+  height: 40rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../imgs/background/header-home.png") fixed no-repeat center/cover;
+  padding-top: 100px;
+
+  @include responsiveMax(tab) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 50px;
+    height: 50rem;
+  }
+
+  & .content {
+    gap: 1.5rem;
+
+    & .content-txt {
+      @include responsiveMin(tab) {
+        font-weight: 700 !important;
+      }
+    }
+    & .content-title {
+      @include responsiveMin(tab) {
+        font-weight: bold !important;
+      }
+    }
+  }
+}

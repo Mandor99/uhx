@@ -1,0 +1,67 @@
+.footer {
+  background-color: var(--color-primary);
+  padding-top: var(--md-padding);
+  // padding-bottom: var(--md-padding);
+
+  &-link {
+    cursor: pointer;
+    width: max-content;
+    @extend .underline-link;
+
+    &::after {
+      bottom: -4px;
+    }
+
+    @extend .pullet;
+  }
+}
+
+.logo {
+  &-footer {
+    transition: all 0.3s ease;
+    width: 350px;
+    min-height: 6rem;
+    max-height: 9rem;
+    object-fit: cover;
+    position: relative;
+    left: 30px;
+    top: -20px;
+
+    @include responsiveMax(tab) {
+      width: 100%;
+      right: 0;
+    }
+  }
+}
+
+.caption {
+  position: relative;
+  bottom: 20px;
+
+  @include responsiveMax(tab) {
+    font-size: 1.25rem !important;
+  }
+
+  @include responsiveMin(tab) {
+    width: 75% !important;
+  }
+}
+
+.items {
+  margin-bottom: 0;
+  padding-right: 0.5rem;
+
+  @include responsiveMax(tab) {
+    margin-bottom: 3rem;
+  }
+}
+
+.block {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+  padding: 1rem;
+  text-align: center;
+}

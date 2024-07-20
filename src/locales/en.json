@@ -1,0 +1,10 @@
+{
+    "title": "My Multi-Language Project",
+    "welcome": "Welcome to the Home Page",
+    "about": "About Us",
+    "homePageText": "This is the English index page.",
+    "aboutPageText": "This is the English about page.",
+    "goToAbout": "Go to About Page",
+    "goToHome": "Go to Home Page",
+    "viewInArabic": "عرض بالعربية"
+}

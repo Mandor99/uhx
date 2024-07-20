@@ -1,0 +1,48 @@
+$mobile: 768px; //md
+$tab: 992px; //lg
+$lap: 1200px; //xl
+$desktop: 1400px; //xxl
+
+@mixin responsiveMax($size) {
+    @if $size == mobile {
+        @media (max-width: #{$mobile}) {
+            @content;
+        }
+    }
+    @if $size == tab {
+        @media (max-width: #{$tab}) {
+            @content;
+        }
+    }
+    @if $size == lap {
+        @media (max-width: #{$lap}) {
+            @content;
+        }
+    }
+}
+
+@mixin responsiveMin($size) {
+    @if $size == mobile {
+        @media (min-width: #{$mobile}) {
+            @content;
+        }
+    }
+    @else if $size == tab {
+        @media (min-width: #{$tab}) {
+            @content;
+        }
+    }
+    @else if $size == lap {
+        @media (min-width: #{$lap}) {
+            @content;
+        }
+    }
+    @else if $size == desktop {
+        @media (min-width: #{$desktop}) {
+            @content;
+        }
+    }
+    @else {
+        @error "Invalid size: #{$size}";
+    }
+}

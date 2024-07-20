@@ -1,0 +1,28 @@
+//- 4-col 2-md 1-sm
+footer.footer.py-6.overflow-hidden
+    .container
+        .row.gx-1.justify-content-between
+            .col-12.col-lg-5
+                figure.figure
+                    a.logo-link.text-decoration-none(href='/')
+                        img.figure-img.img-fluid.logo-footer(src="./imgs/logos/UHX white.svg", alt="uhx logo")
+                    figcaption.figure-caption.fs-6.text-white.fw-medium.lh-base.w-100.caption بيت الخبراء يفتح أبوابه لأي تطوير أو تغيير و يأخذ معك رحلة التغيير من البداية.
+            .col-12.col-lg-2
+                h3.fs-5.color-text2 روابط تهمك
+                ul.list-group.gap-2.items
+                    -const list = ["من نحن", "الخبرات", "خدماتنا", "الية العمل"]
+                    each item in list
+                        a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none #{item}
+            .col-12.col-lg-2
+                h3.fs-5.color-text2 نحن معك دائما
+                ul.list-group.gap-2.items
+                    -const list2 = ["طلب استشارة", "انضم كخبير"]
+                    each item in list2
+                        a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none #{item}
+            .col-12.col-md-6.col-lg-3.d-none.d-lg-block
+                img.img-fluid.scaled(src="./imgs/background/footer-tree.svg", alt="tree")
+    .block
+        p.m-0 حقوق النشر &copy; 2024 بيت الخبراء الموحد. كل الحقوق محفوظة.
+        //- p.m-0 &copy; Copyright 2024 NBB - Made with  💚  proudly from Saudi  - All Rights Reserved
+
+
