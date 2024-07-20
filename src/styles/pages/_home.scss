@@ -224,7 +224,7 @@
         background-color: var(--color-text);
 
         @include responsiveMax(tab) {
-          margin-left: -15px;
+          // margin-left: -15px;
         }
       }
     }
