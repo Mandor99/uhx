@@ -5,4 +5,50 @@ block content
     main.main-about
         include ../components/service
 
+        section.works
+            .container
+                h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
+                p.py-3.fs-5.lh-base.w-50.mx-auto.text-white.text-center لقد عمل خبراءنا في مجالات  مختلفة و قطاعات  ريادية و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
+                .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-center.mt-4
+                    -const work1 = {img: '380', caption: 'تطوير المنتجات'}
+                    -const work2 = {img: '390', caption: 'تطوير الاعمال'}
+                    -const work3 = {img: '379', caption: 'التطوير العقاري'}
+                    -const work4 = {img: '389', caption: 'المساهمات العقارية'}
+                    -const work5 = {img: '378', caption: 'ادارة الاملاك العقارية'}
+                    -const work6 = {img: '388', caption: 'التمويل و الصكوك الاسلامية'}
+                    -const work7 = {img: '387', caption: 'التقنية المالية'}
+                    -const work8 = {img: '377', caption: 'الدراسات المالية'}
+                    -const work9 = {img: '386', caption: 'الالتزام و ادارة المخاطر'}
+                    -const work10 = {img: '376', caption: 'الحوكمة العائلية'}
+                    -const work11 = {img: '385', caption: 'حوكمة الشركات'}
+                    -const work12 = {img: '384', caption: 'التجارة الالكترونية'}
+                    -const work13 = {img: '375', caption: 'استراتيجيات التسويق'}
+                    -const work14 = {img: '383', caption: 'الهوية البصرية'}
+                    -const work15 = {img: '374', caption: 'المواد الغذائية'}
+                    -const work16 = {img: '381', caption: 'الجودة و تجربة العميل'}
+                    -const work17 = {img: '373', caption: 'الضيافة و الفندقة و السياحة'}
+                    -const work18 = {img: '382', caption: 'الموارد البشرية'}
+                    -const works = [work1, work2, work3, work4, work5, work6, work7, work8, work9, work10,  work11, work12, work13, work14, work15, work16, work17, work18]
+                    each work in works
+                        figure.work-special.text-center.col(data-aos='zoom-in')
+                            img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.png`, alt="asset", width="85", height="85")
+                            figcaption.lh-base.fs-5.text-white #{work.caption}
+
+    section.services.bg-gray2
+        .container
+            +sectionTitle('بماذا نتميز ')
+            .row.justify-content-between.mt-4.service-wrapper
+                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service3.png", alt="service 1", data-aos='zoom-out-up')
+                .col-12.col-lg-8: .content(data-aos='zoom-in-left')
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase ان الانفراد الذي اضفناه في بيت الخيراء الموحد
+                    p.service-txt.m-0.w-100
+                        span هي خدمة الاشراف الاستشاري لقد وضعنا انفسنا في صفك, و تابعنا العمل من مكانك لنتأكد من جودة  الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية  وهل يمكن تطبيقها فعليا.
+            .row.flex-row-reverse.justify-content-between.mt-4
+                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service4.png", alt="service 1", data-aos='zoom-out-down')
+                .col-12.col-lg-8: .content(data-aos='zoom-in-right')
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase خبراءنا يضعون حجر الاساس بعلمهم
+                    p.service-txt.m-0.w-100
+                        span ان التقارير الجميلة  و البيانات الطموحة  تحتاج لمن يقرأها  بيعن الخبير  و يتأكد فاعليتها . و لذلك خبراءنا يضعون حجر الاساس  بعلمهم, يوثقون القواعد و الاركان  بمعرفتهم  و يراقبون البناء  بخبراتهم. <span class='fw-bold'>حتى يكون لدينا  صرحا من المعلومات  يحمي اهدافنا.</span>
+
+
     include ../components/footer

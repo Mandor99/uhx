@@ -94,7 +94,7 @@ body {
   color: var(--color-gray2);
 }
 .bg-gray2 {
-  background-color: var(--color-gray2);
+  background: var(--color-gray2) !important;
 }
 .color-text {
   color: var(--color-text) !important;
