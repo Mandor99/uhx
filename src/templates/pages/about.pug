@@ -1,8 +1,12 @@
-extends ../layout.pug
+extends ../layout
 
 block content
-    h1 #{locales.en.about}
-    p #{locales.en.aboutPageText}
-    a(href='index.html') #{locales.en.goToHome}
-    a(href='?lang=ar') #{locales.en.viewInArabic}
-    a(href='?lang=en') #{locales.ar.viewInEnglish}
+    header.banner.banner-about.d-flex.justify-content-center.align-items-center
+        .container
+            .content.d-flex.flex-column.text-white
+                h2.h1.fs-1.fw-semibold.fw-lg-bold.lh-base.text-center.w-75.mx-auto(data-aos='fade-down') لقد اجتمعنا في هذا البيت من كل مكان
+                p.h4.fs-4.fw-semibold.fw-lg-bold.lh-base.text-center.w-75.mx-auto لنعطي من خبراتنا و معرفتنا كل من يريد معلومة او يبحث عن متخصص في احدى المجالات ولديه الخبرة من ارض الواقع في العديد من التخصصات المالية و الادارية و الانشطة التجارية المختلفة.
+    main.main-about
+        include ../components/cards
+
+    include ../components/footer
