@@ -1,0 +1,17 @@
+section.how-work
+    .container
+        +sectionTitle('آلية العمل')
+        p.service-txt.m-0.w-75.mx-auto.text-center.pt-0
+            span سوف نستضيفك لنتعرف على بعضنا بشكل  افضل و لنسمع  منك ما يدور في راسك  من طموحات و بناءا عليه  سنقول لك ما نفكر فيه لنحقق هذه الطموحات  وما هي افضل الممارسات.
+        ul.timeline
+            -const howWork1 = {txt: "الية تنفيذ الفكرة", aos: "fade-right"}
+            -const howWork2 = {txt: "الخبير او الفريق المناسب لهذه المهمة", aos: "fade-left"}
+            -const howWork3 = {txt: "مدة التنفيذ و التكلفة", aos: "fade-right"}
+            -const howWork4 = {txt: "ماهي الخبرات التي تناسب مشروعك", aos: "fade-left"}
+            -const howWork5 = {txt: "ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل", aos: "fade-right"}
+            -const howWorks = [howWork1, howWork2, howWork3, howWork4, howWork5]
+            each how, index in howWorks
+                li.timeline(data-aos=`${how.aos}`)
+                    .icon.shadow.d-flex.justify-content-center.align-items-center.color-primary(class=`icon-${index+1}`)
+                    details.panel
+                        summary #{how.txt}

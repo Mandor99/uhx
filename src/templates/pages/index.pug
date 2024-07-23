@@ -55,14 +55,14 @@ block content
       .container
          h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
          .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-between.mt-4
-            -const work1 = {img: '380', caption: 'المساهمات العقارية'}
-            -const work2 = {img: '390', caption: 'التطوير العقاري'}
-            -const work3 = {img: '379', caption: 'تطوير الاعمال'}
-            -const work4 = {img: '389', caption: 'تطوير المنتجات'}
-            -const work5 = {img: '378', caption: 'الدراسات المالية'}
-            -const work6 = {img: '388', caption: 'الالتزام و ادارة المخاطر'}
-            -const work7 = {img: '386', caption: 'التمويل و الصكوك الاسلامية'}
-            -const work8 = {img: '377', caption: 'ادارة الاملاك العقارية'}
+            -const work1 = {img: '380', caption: 'تطوير المنتجات'}
+            -const work2 = {img: '390', caption: 'تطوير الاعمال'}
+            -const work3 = {img: '379', caption: 'التطوير العقاري'}
+            -const work4 = {img: '389', caption: 'المساهمات العقارية'}
+            -const work5 = {img: '378', caption: 'ادارة الاملاك العقارية'}
+            -const work6 = {img: '388', caption: 'التمويل و الصكوك الاسلامية'}
+            -const work7 = {img: '387', caption: 'التقنية المالية'}
+            -const work8 = {img: '377', caption: 'الدراسات المالية'}
             -const works = [work1, work2, work3, work4, work5, work6, work7, work8]
             each work in works
                figure.work-special.text-center.col(data-aos='zoom-in')
@@ -70,25 +70,7 @@ block content
                   figcaption.lh-base.fs-5.text-white #{work.caption}
          .exp-btn.text-center.pt-4
             a.works-btn.btn.circle-btn.button-light(href='service.html') مشاهدة المزيد
-
-   section.how-work
-      .container
-         +sectionTitle('آلية العمل')
-         p.service-txt.m-0.w-75.mx-auto.text-center.pt-0
-                  span سوف نستضيفك لنتعرف على بعضنا بشكل  افضل و لنسمع  منك ما يدور في راسك  من طموحات و بناءا عليه  سنقول لك ما نفكر فيه لنحقق هذه الطموحات  وما هي افضل الممارسات.
-         ul.timeline
-            -const howWork1 = {txt: "الية تنفيذ الفكرة", aos: "fade-right"}
-            -const howWork2 = {txt: "الخبير او الفريق المناسب لهذه المهمة", aos: "fade-left"}
-            -const howWork3 = {txt: "مدة التنفيذ و التكلفة", aos: "fade-right"}
-            -const howWork4 = {txt: "ماهي الخبرات التي تناسب مشروعك", aos: "fade-left"}
-            -const howWork5 = {txt: "ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل", aos: "fade-right"}
-            -const howWorks = [howWork1, howWork2, howWork3, howWork4, howWork5]
-            each how, index in howWorks
-               li.timeline(data-aos=`${how.aos}`)
-                  .icon.shadow.d-flex.justify-content-center.align-items-center.color-primary(class=`icon-${index+1}`)
-                  details.panel
-                     summary #{how.txt}
-
+   include ../components/timeline
    section.our-clients
       .container
          +sectionTitle('ابرز عملاءنا')

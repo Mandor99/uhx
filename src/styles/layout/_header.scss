@@ -24,6 +24,11 @@
       url("../imgs/background/header-service.png") fixed no-repeat center/cover;
   }
 
+  &-how {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../imgs/background/header-exp.png") fixed no-repeat center/cover;
+  }
+
   & .content {
     gap: 1.5rem;
 
