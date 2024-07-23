@@ -10,6 +10,8 @@
     padding-right: 1rem;
     padding-top: 50px;
     height: 50rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../imgs/background/header-home.png") fixed no-repeat center/cover;
   }
 
   & .content {
@@ -21,6 +23,8 @@
       }
     }
     & .content-title {
+      width: 60% !important;
+
       @include responsiveMin(tab) {
         font-weight: bold !important;
       }

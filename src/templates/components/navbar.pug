@@ -8,16 +8,24 @@ nav.navbar.fixed-top.navbar-expand-lg.bg-primary
       span.toggler-icon.bottom-bar
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.navbar-nav-scroll.me-auto.mb-2.mb-lg-0.gap-3
-        -const navItems = ["الرئيسية", "من نحن", "الخبرات", "الخبرات", "الية العمل", "عملاءنا"]
+        -const navItems = ["الرئيسية", "من نحن", "خدماتنا", "الخبرات", "الية العمل"]
         each item in navItems
           li.nav-item
-            a.nav-link.text-white.fs-5.fw-normal.underline-link.px-0.text-uppercase.text-center.pb-3(aria-current='page', href='#', data-toggle='collapse') #{item}
-
+            a.nav-link.text-white.fs-6.fw-normal.underline-link.px-0.text-uppercase.text-center.pb-3(aria-current='page', href='#', data-toggle='collapse') #{item}
+        li.nav-item.d-flex.align-items-center.gap-3.mx-auto
+            a.nav-link.social-icon.nav-link.px-0.text-center.pb-3(aria-current='page', data-toggle='collapse' href="#")
+              img(src="./imgs/icons/twitter.png", alt="twitter" width='20' height='20')
+            a.nav-link.social-icon.nav-link.px-0.text-center.pb-3(aria-current='page', data-toggle='collapse' href="#")
+              img(src="./imgs/icons/instagram.png", alt="instagram" width='20' height='20')
         li.nav-item.dropdown
-          a.nav-link.dropdown-toggle.text-white.fs-5.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+          a.nav-link.dropdown-toggle.text-white.fs-6.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
             | نحن معك دائما
           ul.dropdown-menu.bg-primary-dark.py-0
             -const dropdownItems = ["طلب استشارة", "انضم كخبير","التراخيص"]
             each item in dropdownItems
               li.text-center
-                a.dropdown-item.text-white.fs-5.fw-normal.text-uppercase.text-center.circle-effect(href='#') #{item}
+                a.dropdown-item.text-white.fs-6.fw-normal.text-uppercase.text-center.circle-effect(href='#') #{item}
+        li.nav-item.mx-auto.pb-3: button.download-btn.btn.rounded-button.btn-primary.d-flex.align-items-center.fs-6.gap-2.color-primary.bg-white.border-0
+          img(src="./imgs/icons/download (1).png", alt="download profile")
+          | الملف الشخصي
+

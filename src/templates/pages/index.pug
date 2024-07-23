@@ -2,6 +2,14 @@ extends ../layout.pug
 
 block content
    include ../components/header
+   section.intro.d-flex.justify-content-center.align-items-center
+    .container
+        .d-flex.flex-column.justify-content-center.align-items-center
+            h2.color-primary.fs-2.fw-semibold.fw-lg-bold.lh-base(data-aos='fade-down') لقد اجتمعنا في هذا البيت من كل مكان
+            p.fs-4.fw-normal.fw-lg-medium.lh-base.w-75.text-center(data-aos='fade-down') لنعطي من خبراتنا و معرفتنا كل من يريد معلومة أو يبحث عن متخصص في إحدى المجالات ولديه الخبرة من أرض الواقع في العديد من التخصصات المالية و الإدارية و الأنشطة التجارية المختلفة.
+            .buttons-group.d-flex.align-items-start.gap-3(data-aos='fade-right')
+                button.btn.circle-btn.button-primary(type="button") من نحن
+                button.btn.circle-btn.button-light(type="button") تواصل معنا
    section.slogan.bg-gray2
       .container
          +sectionTitle('بيت الخبراء الموحد')
@@ -42,7 +50,7 @@ block content
                      .card-body.text-center.card-content
                         h5.card-title.color-primary.fw-bold #{card.title}
                         p.card-text.lh-lg #{card.body}
-                           span.d-inline-block.color-secondary #{card.extra}
+                           span.d-inline-block.color-primary #{card.extra}
    section.exp.bg-gray2.overflow-x-hidden
       //- .container
       .exp-body.text-center
@@ -93,16 +101,21 @@ block content
    section.how-work
       .container
          +sectionTitle('آلية العمل')
-         .work-row.row.justify-content-between.mt-4
-            .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/how-work.png", alt="service 1", data-aos='zoom-in')
-            .col-12.col-lg-8: .content(data-aos='fade-left')
-               //- h3.fs-bold.h3.mb-0.color-primary.text-uppercase success stories
-               p.service-txt.m-0.w-100
+         p.service-txt.m-0.w-75.mx-auto.text-center.pt-0
                   span سوف نستضيفك لنتعرف على بعضنا بشكل  افضل و لنسمع  منك ما يدور في راسك  من طموحات و بناءا عليه  سنقول لك ما نفكر فيه لنحقق هذه الطموحات  وما هي افضل الممارسات.
-               ul.list-style-none.row.row-cols-1.row-cols-md-2.how-list
-                  -const list3 = ["الية تنفيذ الفكرة", "الخبير او الفريق المناسب لهذه المهمة", "مدة التنفيذ و التكلفة", "ماهي الخبرات التي تناسب مشروعك", "ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل"]
-                  each item in list3
-                     li.pullet.fs-5.fw-medium.lh-lg.flex-fill.d-flex.align-items-center #{item}
+         ul.timeline
+            -const howWork1 = {txt: "الية تنفيذ الفكرة", aos: "fade-right"}
+            -const howWork2 = {txt: "الخبير او الفريق المناسب لهذه المهمة", aos: "fade-left"}
+            -const howWork3 = {txt: "مدة التنفيذ و التكلفة", aos: "fade-right"}
+            -const howWork4 = {txt: "ماهي الخبرات التي تناسب مشروعك", aos: "fade-left"}
+            -const howWork5 = {txt: "ثم نطلب تحديد موعد ليشرح لك الخبير ما سيقوم به بشكل مفصل", aos: "fade-right"}
+            -const howWorks = [howWork1, howWork2, howWork3, howWork4, howWork5]
+            each how, index in howWorks
+               li.timeline(data-aos=`${how.aos}`)
+                  .icon.shadow.d-flex.justify-content-center.align-items-center.color-primary(class=`icon-${index+1}`)
+                  details.panel
+                     summary #{how.txt}
+
    section.our-clients
       .container
          +sectionTitle('ابرز عملاءنا')

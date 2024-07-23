@@ -1,32 +1,41 @@
 %button {
-    padding: .6rem 3rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: all .1s ease;
-    text-transform: capitalize;
+  padding: 0.6rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.1s ease;
+  text-transform: capitalize;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .rounded-button {
-    border-radius: 999px;
+  border-radius: 999px;
 }
 .button-primary {
-    color: var(--color-primary);
-    background: var(--color-secondary);
-    @extend .rounded-button;
-    @extend %button;
+  color: var(--color-gray);
+  background: var(--color-primary);
+  @extend .rounded-button;
+  @extend %button;
 
-    &:hover {
-        background-color: var(--color-primary);
-        color: var(--color-secondary);
-    }
+  &:hover {
+    background-color: var(--color-gray);
+    color: var(--color-primary);
+  }
 }
 .button-light {
-    background: var(--color-gray);
-    color: var(--color-primary);
-    @extend .rounded-button;
-    @extend %button;
+  color: var(--color-primary);
+  background: var(--color-gray);
+  @extend .rounded-button;
+  @extend %button;
 
-    &:hover {
-        color: var(--color-gray);
-        background-color: var(--color-primary);
-    }
+  &:hover {
+    background-color: var(--color-text2);
+    color: var(--color-gray);
+  }
+}
+
+.download-btn {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #f2f2f2 !important;
+  }
 }
