@@ -1,0 +1,99 @@
+extends ../layout
+
+block content
+    header.banner.banner-exp.d-flex.justify-content-center.align-items-center
+    main.main-exp
+        section.exp
+            .container
+                +sectionTitle('اين عمل خبراءنا')
+                p.m-0.w-50.lh-base.mx-auto.text-center.pt-0.exp-txt-p
+                    span لقد عمل خبراءنا في مجالات  مختلفة و قطاعات  ريادية و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
+                section.exp-details
+                    ul#myTab.nav.nav-tabs.px-0(role='tablist')
+                        li.nav-item(role='presentation')
+                            button#home-tab.tab-item-btn.nav-link.active(data-bs-toggle='tab', data-bs-target='#home', type='button', role='tab', aria-controls='home', aria-selected='true') الخبرات العملية
+                        li.nav-item(role='presentation')
+                            button#profile-tab.tab-item-btn.nav-link(data-bs-toggle='tab', data-bs-target='#profile', type='button', role='tab', aria-controls='profile', aria-selected='false') الخبرات التعليمية
+                        li.nav-item(role='presentation')
+                            button#contact-tab.tab-item-btn.nav-link(data-bs-toggle='tab', data-bs-target='#contact', type='button', role='tab', aria-controls='contact', aria-selected='false') الرخص المهنية
+
+                    #myTabContent.tab-content.exp-tab-content
+                        #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+                            section.features.exp-features.p-0
+                                #features-carousel2.carousel.slide.h-100(data-bs-ride="carousel")
+                                    .carousel-indicators
+                                        button.active(type='button', data-bs-target='#features-carousel2', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                                        button(type='button', data-bs-target='#features-carousel2', data-bs-slide-to='1', aria-label='Slide 2')
+                                        button(type='button', data-bs-target='#features-carousel2', data-bs-slide-to='2', aria-label='Slide 3')
+                                    .carousel-inner
+                                        .carousel-item.active
+                                            .row.justify-content-center.pb-5
+                                                - for (let i = 37; i <= 60; i++)
+                                                    .col-6.col-xs-12.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/exprience_logos/Asset ${i}.png`, alt="exp")
+
+                                        .carousel-item
+                                            .row.justify-content-center.pb-5
+                                                - for (var i = 61; i <= 84; i++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/exprience_logos/Asset ${i}.png`, alt="exp")
+
+                                        .carousel-item
+                                            .row.justify-content-center.pb-5
+                                                - for (var i = 85; i <= 106; i++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/exprience_logos/Asset ${i}.png`, alt="exp")
+
+
+                        #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                            .row.flex-row-reverse.justify-content-between.mt-4.align-items-center.mb-5.exp-custom-row
+                                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/bg-exp-education.png", alt="exp", data-aos='zoom-out-down')
+                                .col-12.col-lg-8: .content(data-aos='zoom-in-right')
+                                    p.service-txt.m-0.w-100 
+                                        |لان خبراءنا عملوا في اهم  و اكبر القطاعات الحيوية  في المملكة العربية السعودية و تقلدوا العديد من المناصب  الريادية,  فمن المؤكد انهم حصلوا  على شهادات مختلفة من جامعات مهمة مهدت لهم  الوصول لوظائف مرموقة في سوق  العمل السعودي وهنا ستجدون ملخص الجهات التعليمية التي صقلت الخلفية التعليمية لخبرائن
+
+                            section.features.exp-features.p-0
+                                #features-carousel3.carousel.slide.h-100(data-bs-ride="carousel")
+                                    .carousel-indicators
+                                        button.active(type='button', data-bs-target='#features-carousel3', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                                    .carousel-inner
+                                        .carousel-item.active
+                                            .row.justify-content-center.pb-5
+                                                - for (let i = 108; i <= 117; i++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/education/Asset ${i}.png`, alt="exp")
+                                                - for (let j = 121; j <= 126; j++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/education/Asset ${j}.png`, alt="exp")
+                                                - for (let k = 157; k <= 163; k++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/education/Asset ${k}.png`, alt="exp")
+
+                        #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+                            .row.flex-row-reverse.justify-content-between.mt-4.align-items-center.mb-5.exp-custom-row
+                                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/bg-exp-license.png", alt="exp", data-aos='zoom-out-down')
+                                .col-12.col-lg-8: .content(data-aos='zoom-in-right')
+                                    p.service-txt.m-0.w-100
+                                        | خلال مسيرة  عمل خبراءنا اضافوا الى خبراتهم العملية  رخص و شهادات مهنية متعددة  لتعزيز القدرة  و زيادة  المعرفة  في تخصصاتهم,  وهنا نستعرضها معكم هذه  الرخص لتطلعوا  على مدى احترافية خبراءنا.
+
+                            section.features.exp-features.p-0
+                                #features-carousel4.carousel.slide.h-100(data-bs-ride="carousel")
+                                    .carousel-indicators
+                                        button.active(type='button', data-bs-target='#features-carousel4', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                                    .carousel-inner
+                                        .carousel-item.active
+                                            .row.justify-content-center.pb-5
+                                                - for (let i = 391; i <= 417; i++)
+                                                    .col-6.col-md-3.col-lg-2.mb-3
+                                                        .card
+                                                            img.img-fluid.exp-img1(src=`./imgs/licenses/Asset ${i}.png`, alt="exp")
+
+
+
+    include ../components/footer

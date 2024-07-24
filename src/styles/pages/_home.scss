@@ -425,3 +425,80 @@
 .caption-license {
   font-size: 0.9rem;
 }
+
+.exp {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.tab-item-btn,
+.tab-item-btn:hover,
+.tab-item-btn:focus {
+  background-color: rgba(var(--color-text2-rgb), 0.5) !important;
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+  margin: 0px 6px !important;
+  outline: none !important;
+  box-shadow: unset !important;
+}
+.tab-item-btn.active {
+  background: var(--color-primary) !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  outline: none !important;
+  box-shadow: unset !important;
+}
+.exp-tab-content {
+  border: 1px solid rgb(244, 255, 251);
+  box-shadow: rgba(11, 114, 76, 0.47) 0px 0px 9px;
+  border-radius: 5px;
+  margin: 0rem auto;
+  padding: 2rem;
+}
+.exp-features {
+  // min-height: 290px;
+
+  & .carousel.slide {
+    height: 100%;
+
+    .carousel-indicators [data-bs-target] {
+      background-color: rgba(var(--color-primary-rgb), 0.7);
+    }
+
+    .carousel-indicators .active {
+      background: var(--color-primary);
+    }
+  }
+}
+.tab-pane {
+  min-height: 290px;
+
+  & .features {
+    background: #fff !important;
+  }
+}
+
+.exp .exp-details .card {
+  background-color: #fbfbfb;
+  padding: 1rem;
+  border: 1px solid #e6e6e6;
+
+  & .exp-img1 {
+    height: 52px;
+    object-fit: contain;
+  }
+}
+
+.exp .exp-txt-p {
+  margin-bottom: 2.5rem !important;
+  @include responsiveMax(mobile) {
+    width: 100% !important;
+  }
+}
+
+.exp .exp-custom-row {
+  @include responsiveMax(tab) {
+    gap: 2.5rem !important;
+    flex-direction: row !important;
+  }
+}
