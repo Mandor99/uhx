@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    header.banner.banner-license.d-flex.justify-content-center.align-items-center
+    main.main-license.license: .container
+        +sectionTitle('التراخيص')
+        section.license-content
+            .row.g-4.justify-content-center
+                -license1 = {img: 'license3', caption: 'استشارات  مالية', alt: 'استشارات  مالية'}
+                -license2 = {img: 'license2', caption: 'استشارات  الحوكمة و المخاطر و الالتزام ', alt: 'استشارات  الحوكمة و المخاطر و الالتزام '}
+                -license3 = {img: 'license1', caption: 'استشارات  ادارية', alt: 'استشارات  ادارية'}
+                -licenses = [license1, license2, license3]
+                each license in licenses
+                    .col.col-12.col-md-6.col-lg-3
+                        figure.shadow.figure-license.text-center.h-100.py-3
+                            img.img-fluid(src=`../imgs/licenses/${license.img}.png`, alt=`${license.alt}` width='350' height='250' style='object-fit: contain')
+                            figcaption.caption-license.fw-bold.color-primary.w-100.mt-3 #{license.caption}
+
+    include ../components/footer

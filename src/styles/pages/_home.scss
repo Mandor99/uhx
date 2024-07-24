@@ -409,3 +409,19 @@
     object-fit: contain;
   }
 }
+
+.license {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.figure-license {
+  @include responsiveMax(mobile) {
+    width: 75% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.caption-license {
+  font-size: 0.9rem;
+}
