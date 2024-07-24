@@ -26,10 +26,13 @@ nav.navbar.fixed-top.navbar-expand-lg.bg-primary
           a.nav-link.dropdown-toggle.text-white.fs-6.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
             | نحن معك دائما
           ul.dropdown-menu.bg-primary-dark.py-0
-            -const dropdownItems = ["طلب استشارة", "انضم كخبير","التراخيص"]
+            -const dropdownItem1 = {name: "طلب استشارة", href: 'consultant.html'}
+            -const dropdownItem2 = {name: "انضم كخبير", href: '#'}
+            -const dropdownItem3 = {name: 'التراخيص', href: '#'}
+            -const dropdownItems = [dropdownItem1, dropdownItem2, dropdownItem3]
             each item in dropdownItems
               li.text-center
-                a.dropdown-item.text-white.fs-6.fw-normal.text-uppercase.text-center.circle-effect(href='#') #{item}
+                a.dropdown-item.text-white.fs-6.fw-normal.text-uppercase.text-center.circle-effect(href=`${item.href}`) #{item.name}
         li.nav-item.mx-auto.pb-3: button.download-btn.btn.rounded-button.btn-primary.d-flex.align-items-center.fs-6.gap-2.color-primary.bg-white.border-0
           img(src="./imgs/icons/download (1).png", alt="download profile")
           | الملف الشخصي

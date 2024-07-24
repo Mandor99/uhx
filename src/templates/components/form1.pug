@@ -1,0 +1,18 @@
+section.contact
+    .container
+        +sectionTitle('نحن معك دائما')
+        .contact-form.mt-4.shadow
+            .row.row-cols-1.row-cols-lg-2.justify-content-between(data-aos='zoom-out')
+                .img-wrapper.d-none.d-lg-block
+                .form-wrapper
+                    .content.py-4
+                        h3.text-center.colot-primary طلب استشارة
+                        p.text-center.colot-primary.lh-base
+                            span شكراً على اهتمامك بـ<span class=fw-bold>"بيت الخبراء الموحد"!</span> تواصل معنا وشاركنا أسئلتك واقتراحاتك وأفكارك، فتواصلك يسرّنا دوماً
+                    form.form.row.g-3
+                        .col-12.col-lg-6: input.form-control(type="text" placeholder="الاسم الاول" aria-label="First name")
+                        .col-12.col-lg-6: input.form-control(type="text" placeholder="الاسم الاخير" aria-label="Last name")
+                        .col-12: input.form-control(type="email" placeholder="البريد الااكتروني")
+                        .col-12: input.form-control(type="tel" name="phone" placeholder="رقم الهاتف" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required)
+                        .col-12: textarea.form-control(rows="5", placeholder='تفاصيل الاستشارة')
+                        button.btn.mx-auto.button-primary.w-50.mt-4.submit-btn(type="submit") ارسال
