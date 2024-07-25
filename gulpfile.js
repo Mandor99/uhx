@@ -73,7 +73,7 @@ export function scripts() {
 export function templates() {
     const locales = loadLocales();
     return src(paths.templates.src)
-        .pipe(pug({ locals: { locales: locales } }))
+        .pipe(pug({ locals: { locales: locales }, pretty: true }))
         // .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest(paths.templates.dest))
         .pipe(browserSync.stream());

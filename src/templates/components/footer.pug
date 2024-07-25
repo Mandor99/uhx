@@ -1,4 +1,3 @@
-//- 4-col 2-md 1-sm
 footer.footer.py-6.overflow-hidden
     .container
         .row.gx-1.justify-content-between
@@ -6,23 +5,24 @@ footer.footer.py-6.overflow-hidden
                 figure.figure
                     a.logo-link.text-decoration-none(href='/')
                         img.figure-img.img-fluid.logo-footer(src="./imgs/logos/UHX white.svg", alt="uhx logo")
-                    figcaption.figure-caption.fs-6.text-white.fw-medium.lh-base.w-100.caption بيت الخبراء يفتح ابوابه ويأخذ معك رحلة التغيير من البداية
+                    figcaption.figure-caption.fs-6.text-white.fw-medium.lh-base.w-100.caption بيت الخبراء يفتح أبوابه ويأخذ معك رحلة التغيير من البداية
 
             .col-12.col-lg-2
-                h3.fs-5.color-text2 روابط تهمك
+                h3.fs-5.text-white روابط تهمك
                 ul.list-group.gap-2.items
-                    -const list = ["من نحن", "الخبرات", "خدماتنا", "الية العمل"]
-                    each item in list
-                        a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none #{item}
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='about.html') من نحن
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='experience.html') الخبرات
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='service.html') خدماتنا
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='how.html') آلية العمل
             .col-12.col-lg-2
-                h3.fs-5.color-text2 نحن معك دائما
+                h3.fs-5.text-white نحن معك دائماً
                 ul.list-group.gap-2.items
-                    -const list2 = ["طلب استشارة", "انضم كخبير"]
-                    each item in list2
-                        a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none #{item}
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='consultant.html') طلب إستشارة
+                    a.footer-link.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='join.html') إنضم كخبير
                 .social-icons.d-flex.gap-4.mt-4.p-3.pt-0
-                    img(src="./imgs/icons/twitter.png", alt="twitter" width='24', height='24')
-                    img(src="./imgs/icons/instagram.png", alt="instagram" width='24' height='24')
+                    a(href='https://x.com/UHX_SA'): img.img-fluid(src="./imgs/icons/twitter.png", alt="twitter" width='24', height='24')
+                    a(href='https://www.instagram.com/uhx_sa/'): img.img-fluid(src="./imgs/icons/instagram.png", alt="instagram" width='24' height='24')
+                    a(href='https://www.linkedin.com/in/uhx-sa/'): img.img-fluid(src="./imgs/icons/linkedin.png", alt="linkedin" width='24' height='24')
             .col-12.col-md-6.col-lg-3.d-none.d-lg-block
                 img.img-fluid.scaled(src="./imgs/background/footer-tree.svg", alt="tree")
     .block

@@ -15,8 +15,8 @@ block content
          +sectionTitle('بيت الخبراء الموحد')
          .slogan-items.g-3.justify-content-between.d-flex.flex-row.flex-wrap
             -const slogan1 = {img:'deal', caption: ['تعاون', 'Cooperation'], dataAos:'fade-right'}
-            -const slogan2 = {img:'content-strategy', caption: ['استراتيجية', 'Strategy'], dataAos:'fade-up'}
-            -const slogan3 = {img:'creativity', caption: ['ابتكار', 'Innovation'], dataAos:'fade-down'}
+            -const slogan2 = {img:'content-strategy', caption: ['إستراتيجية', 'Strategy'], dataAos:'fade-up'}
+            -const slogan3 = {img:'creativity', caption: ['إبتكار', 'Innovation'], dataAos:'fade-down'}
             -const slogan4 = {img:'growth', caption: ['نجاح', 'Success'], dataAos:'fade-left'}
             -const slogans = [slogan1, slogan2, slogan3, slogan4]
             each slogan in slogans
@@ -31,10 +31,11 @@ block content
          .custom-row.row.justify-content-between
             .col-12.col-lg-8
                p.ceo-word(data-aos='fade-right')
-                  span إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من أولوياتنا<span class='color-primary'> لنضمن بمشيئة الله الإستقرار و الاستمرار و النجاح لأعمالنا و منشاتنا</span>. و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن <span class='color-primary'>الوصول الى تحقيق هذه الأهداف يعتمد على اتباع خطوات صحيحة و واضحة</span> و مجربة و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا الى تحقيق المستهدفات. و بناءاً عليه قمنا بتشييد <span class='color-primary fw-bold'>”بيت الخبراء الموحد”</span> ليجتمع قيه خبراءنا مع رواد الأعمال و أصحاب المنشآت و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة
+                  span إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من أولوياتنا<span class='color-primary'> لنضمن بمشيئة الله الإستقرار و الاستمرار و النجاح لأعمالنا و منشآتنا</span>. و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن <span class='color-primary'>الوصول الى تحقيق هذه الأهداف يعتمد على اتباع خطوات صحيحة و واضحة</span> و مجربة و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا الى تحقيق المستهدفات. و بناءاً عليه قمنا بتشييد <span class='color-primary fw-bold'>”بيت الخبراء الموحد”</span> ليجتمع فيه خبراءنا مع رواد الأعمال و أصحاب المنشآت و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة
 
             .col-12.col-lg-4
-               img.img-fluid.img-ceo(src="./imgs/background/ceo.png", alt="CEO", data-aos='zoom-in-left')
+               a(href='https://www.linkedin.com/in/rawad-zarea-')
+                  img.img-fluid.img-ceo(src="./imgs/background/executive.png", alt="CEO", data-aos='zoom-in-left')
    include ../components/cards
    section.exp.bg-gray2.overflow-x-hidden
       //- .container
@@ -55,18 +56,18 @@ block content
       .container
          h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
          .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-between.mt-4
-            -const work1 = {img: '380', caption: 'تطوير المنتجات'}
-            -const work2 = {img: '390', caption: 'تطوير الاعمال'}
-            -const work3 = {img: '379', caption: 'التطوير العقاري'}
-            -const work4 = {img: '389', caption: 'المساهمات العقارية'}
-            -const work5 = {img: '378', caption: 'ادارة الاملاك العقارية'}
-            -const work6 = {img: '388', caption: 'التمويل و الصكوك الاسلامية'}
-            -const work7 = {img: '387', caption: 'التقنية المالية'}
-            -const work8 = {img: '377', caption: 'الدراسات المالية'}
+            -const work1 = {img: '1', caption: 'حوكمة مجالس الإدارة'}
+            -const work2 = {img: '2', caption: 'حوكمة الشركات الخاصة والعائلية'}
+            -const work3 = {img: '3', caption: 'تطوير الأعمال والإستراتيجية'}
+            -const work4 = {img: '4', caption: 'إستراتيجيات رأس المال البشري'}
+            -const work5 = {img: '5', caption: 'إستقطاب وبناء الكفاءات البشرية'}
+            -const work6 = {img: '6', caption: '⁠الإستشارات القانونية'}
+            -const work7 = {img: '7', caption: 'الأبحاث وإستراتيجيات التسويق'}
+            -const work8 = {img: '8', caption: 'التمويل والصكوك الإسلامية'}
             -const works = [work1, work2, work3, work4, work5, work6, work7, work8]
             each work in works
                figure.work-special.text-center.col(data-aos='zoom-in')
-                  img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.png`, alt="asset", width="85", height="85")
+                  img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.svg`, alt="asset", width="85", height="85")
                   figcaption.lh-base.fs-5.text-white #{work.caption}
          .exp-btn.text-center.pt-4
             a.works-btn.btn.circle-btn.button-light(href='service.html') مشاهدة المزيد
@@ -75,16 +76,16 @@ block content
       .container
          +sectionTitle('ابرز عملاءنا')
          .slider-wrapper: .clients-slider.owl-carousel.owl-theme
-            -const client1 = {img: "1", title: "قرضي الرقمية"}
-            -const client2 = {img: "2", title: "بناء الاعمال الوطنية"}
-            -const client3 = {img: "3", title: "امكان العربية"}
-            -const client4 = {img: "4", title: "امداد لتموين الطعام"}
-            -const client5 = {img: "5", title: "مدرسة الاوراق الخضراء"}
+            -const client1 = {img: "1.svg", title: "شركة رقمنة الحلول للوساطة الرقمية"}
+            -const client2 = {img: "2.png", title: "بناء الاعمال الوطنية"}
+            -const client3 = {img: "3.png", title: "إمكان العربية"}
+            -const client4 = {img: "4.png", title:  "إمداد الغذائية"}
+            -const client5 = {img: "5.png", title: "مدرسة الاوراق الخضراء"}
             -const clients = [client1, client2, client3, client4, client5]
             each client in clients
                figure.slider-figure.text-center.item.client-fig.shadow.d-flex.flex-column.align-items-center
-                  img.img-fluid.client-logo(src=`./imgs/logos/client${client.img}.png`, alt="client")
-                  figcaption.fs-4.fw-bold.color-primary #{client.title}
+                  img.img-fluid.client-logo(src=`./imgs/logos/client${client.img}`, alt="client")
+                  figcaption.fs-5.fw-bold.color-primary #{client.title}
    section.features
       .container
          h3.h3.mb-0.text-white.text-uppercase.mb-4(data-aos='fade-down') بماذا نتميز ...؟
@@ -95,11 +96,11 @@ block content
             .carousel-inner
                .carousel-item.active
                   //- .carousel-caption.d-md-block
-                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن الانفراد الذي اضفناه في بيت الخبراء الموحد هي خدمة الاشراف الاستشاري لقد وضعنا انفسنا في صفك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعليا.
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن الإنفراد الذي أضفناه في بيت الخبراء الموحد هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفّك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعلاً.
 
                .carousel-item
                   //- .carousel-caption.d-md-block
-                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text Sإن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها.ولذلك خبرائنا يضعون حجر الاساس بعلمهم, يوثقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم.حتى يكن لدينا صرحا من المعلومات يحمي أهدافنا.
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها. ولذلك خبرائنا يضعون حجر الأساس بعلمهم,  يوثّقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم. حتى يكن لدينا صرحاً من المعلومات يحمي أهدافنا.
 
    include ../components/form1
 

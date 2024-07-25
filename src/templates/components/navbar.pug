@@ -11,17 +11,12 @@ nav.navbar.fixed-top.navbar-expand-lg.bg-primary
         -const navItem1 = {name: 'الرئيسية', href: '/'}
         -const navItem2 = {name: "من نحن", href: 'about.html'}
         -const navItem3 = {name: 'خدماتنا', href: 'service.html'}
-        -const navItem4 = {name: "الية العمل", href: 'how.html'}
+        -const navItem4 = {name: "آلية العمل", href: 'how.html'}
         -const navItem5 = {name: 'الخبرات', href: 'experience.html'}
         -const navItems = [navItem1, navItem2, navItem3, navItem4, navItem5 ]
         each item in navItems
           li.nav-item
             a.nav-link.text-white.fs-6.fw-normal.underline-link.px-0.text-uppercase.text-center.pb-3(aria-current='page', href=`${item.href}`, data-toggle='collapse') #{item.name}
-        li.nav-item.d-flex.align-items-center.gap-3.mx-auto
-            a.nav-link.social-icon.nav-link.px-0.text-center.pb-3(aria-current='page', data-toggle='collapse' href="#")
-              img(src="./imgs/icons/twitter.png", alt="twitter" width='20' height='20')
-            a.nav-link.social-icon.nav-link.px-0.text-center.pb-3(aria-current='page', data-toggle='collapse' href="#")
-              img(src="./imgs/icons/instagram.png", alt="instagram" width='20' height='20')
         li.nav-item.dropdown
           a.nav-link.dropdown-toggle.text-white.fs-6.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
             | نحن معك دائما
