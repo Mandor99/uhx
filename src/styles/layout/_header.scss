@@ -11,8 +11,27 @@
   }
 
   &-home {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../imgs/background/header-home.png") fixed no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    // background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    // url("../imgs/background/header-home.png") fixed no-repeat center/cover;
+    // @supports (mask-image: url("../imgs/background/header-home.png")) {
+    //   mask-image: url("../imgs/background/header-home.png");
+    //   mask-size: cover;
+    //   background-image: none;
+    // }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-home.png") no-repeat center/cover;
+      z-index: -1; // Ensure the pseudo-element is behind the content
+    }
   }
 
   &-about {
