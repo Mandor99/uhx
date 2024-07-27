@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   height: 40rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../imgs/background/header-home.png") fixed no-repeat center/cover;
   padding-top: 100px;
 
@@ -10,7 +10,7 @@
     padding-right: 1rem;
     padding-top: 50px;
     height: 50rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("../imgs/background/header-home.png") fixed no-repeat center/cover;
   }
 
