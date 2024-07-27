@@ -1,16 +1,17 @@
 .banner {
   position: relative;
   height: 40rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../imgs/background/header-home.png") fixed no-repeat center/cover;
   padding-top: 100px;
 
   @include responsiveMax(tab) {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 50px;
-    height: 100rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    height: 50rem;
+  }
+
+  &-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../imgs/background/header-home.png") fixed no-repeat center/cover;
   }
 
