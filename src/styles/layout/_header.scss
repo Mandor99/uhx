@@ -69,29 +69,88 @@
   }
 
   &-how {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../imgs/background/header-exp.png") fixed no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-exp.png") no-repeat center/cover;
+      z-index: -1;
+    }
   }
 
   &-contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../imgs/background/header-consultant.png") fixed no-repeat
-        center/cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-consultant.png") no-repeat center/cover;
+      z-index: -1;
+    }
   }
 
   &-license {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../imgs/background/header-license.png") fixed no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-license.png") no-repeat center/cover;
+      z-index: -1;
+    }
   }
 
   &-exp {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../imgs/background/header-exp.png") fixed no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-exp.png") no-repeat center/cover;
+      z-index: -1;
+    }
   }
 
   &-join {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../imgs/background/header-join.jpeg") fixed no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/background/header-join.jpeg") no-repeat center/cover;
+      z-index: -1;
+    }
   }
 
   & .content {
