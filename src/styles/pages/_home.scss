@@ -482,9 +482,15 @@
   background-color: #fbfbfb;
   padding: 1rem;
   border: 1px solid #e6e6e6;
+  height: 150px;
+  max-height: 150px;
+
+  .card-title {
+    font-size: 0.9rem;
+  }
 
   & .exp-img1 {
-    height: 52px;
+    // height: 52px;
     object-fit: contain;
   }
 }

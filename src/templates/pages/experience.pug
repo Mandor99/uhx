@@ -86,13 +86,79 @@ block content
                                 #features-carousel4.carousel.slide.h-100(data-bs-ride="carousel")
                                     .carousel-indicators
                                         button.active(type='button', data-bs-target='#features-carousel4', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                                        button(type='button', data-bs-target='#features-carousel4', data-bs-slide-to='1', aria-label='Slide 2')
+                                        button(type='button', data-bs-target='#features-carousel4', data-bs-slide-to='2', aria-label='Slide 3')
                                     .carousel-inner
+                                        -const expLicense1 = {img: '391', title: 'Certificate of Membership', place: 'SHRM'}
+                                        -const expLicense2 = {img: '392', title: 'General Securities Qualification Certificate (CME-1)', place: '• Capital Market Authority'}
+                                        -const expLicense2_1 = {img: '392', title: 'Wealth Management', place: '• Capital Market Authority'}
+                                        -const expLicense2_2 = {img: '392', title: 'Corporate Finance', place: '• Capital Market Authority'}
+                                        -const expLicense3 = {img: '393', title: 'Entrepreneurship Adventures', place: ' KAUST (King Abdullah University of Science and Technology'}
+                                        -const expLicense4 = {img: '394', title: 'Certified Wealth Management Diploma', place: 'Swiss Association for Quality (SAQ)'}
+                                        -const expLicense5 = {img: '395', title: 'Accredited SME Consultant™', place: 'Association of Accredited Small Business Consultants ®'}
+                                        -const expLicense6 = {img: '396', title: 'Project Develop Cycle (Preparation & Appraisal of Investment Project)', place: 'UNIDO'}
+                                        -const expLicense7 = {img: '397', title: 'Job Family Modeling & Job Analysis Certificate', place: 'Hay Group'}
+                                        -const expLicense8 = {img: '398', title: 'Remuneration Committee Workshop and Update', place: 'Non-Executive Directors\'​ Association'}
+                                        -const expLicense9 = {img: '399', title: 'Blockchain Technologies: Business Innovation and Application', place: 'MIT Sloan School of Management'}
+                                        -const expLicense10 = {img: '400', title: 'Private Equity Specialist Certificate', place: 'International Academy of Financial Management'}
+                                        -const expLicense11 = {img: '401', title: 'Project Quality & Logical Framework, EDI', place: 'The World Bank'}
+                                        -const expLicense12 = {img: '402', title: 'HRM Policies & Procedures Program Certificate', place: 'Cranfield School of Management'}
+                                        -const expLicense13 = {img: '403', title: 'Management Development Program Certificate', place: 'London Business School'}
+                                        -const expLicense14 = {img: '404', title: 'Digital Transformation Strategy', place: 'Boston Consulting Group (BCG)'}
+                                        -const expLicense15 = {img: '405', title: 'Governance, Risk and Compliance Officer ( GRCO )', place: 'London Governance & Compliance Academy (LGCA)'}
+                                        -const expLicense16 = {img: '406', title: 'Risk focused Bank Supervision', place: ' Federal Reserve Bank of New York'}
+                                        -const expLicense17 = {img: '407', title: 'Executive Management Fontainbleau, Franc', place: 'The Business School for the world'}
+                                        -const expLicense18 = {img: '408', title: 'Digital Transformation in Practice', place: 'IMD'}
+                                        -const expLicense18_1 = {img: '408', title: 'Developing Digital Transformation Strategies', place: 'IMD'}
+                                        -const expLicense19 = {img: '409', title: 'Oxford FinTech Program Certificate', place: 'Saïd Business School, University of Oxford'}
+                                        -const expLicense19_1 = {img: '409', title: 'Oxford Entrepreneurship: Venture Finance Programme Certificate', place: 'Saïd Business School, University of Oxford'}
+                                        -const expLicense20 = {img: '410', title: 'Exercising Leadership: Foundational Principles Certificate', place: ' Harvard University'}
+                                        -const expLicense21 = {img: '411', title: 'Mergers and Acquisitions', place: 'Columbia Business School'}
+                                        -const expLicense22 = {img: '412', title: 'Chartered Director', place: 'Institute of Directors (IoD)'}
+                                        -const expLicense22_1 = {img: '412', title: 'IOD Diploma in Company Direction', place: 'Institute of Directors (IoD)'}
+                                        -const expLicense22_2 = {img: '412', title: 'IOD Certificate in Company Direction', place: 'Institute of Directors (IoD)'}
+                                        -const expLicense23 = {img: '413', title: 'Open Banking, PSD2, and GDPR Certificate', place: 'Udemy'}
+                                        -const expLicense23_1 = {img: '413', title: 'Digital Banking - Masterclass', place: 'Udemy'}
+                                        -const expLicense24 = {img: '414', title: 'Digital Transformation', place: ' University of Virginia Darden School of Business'}
+                                        -const expLicense25 = {img: '415', title: 'Remuneration Committee Workshop and Update', place: 'Mercer'}
+                                        -const expLicense26 = {img: '416', title: 'Property Development and Investment', place: ' University of Cape Town'}
+                                        -const expLicense27 = {img: '417', title: 'Remuneration Committees Training Course', place: ' 21 st Century'}
                                         .carousel-item.active
                                             .row.justify-content-center.pb-5
-                                                - for (let i = 391; i <= 417; i++)
-                                                    .col-6.col-md-3.col-lg-2.mb-3
-                                                        .card
-                                                            img.img-fluid.exp-img1(src=`./imgs/licenses/Asset ${i}.png`, alt="exp")
+                                                -const allExpLicenses = [expLicense1, expLicense2, expLicense2_1, expLicense2_2, expLicense3, expLicense4, expLicense5, expLicense6, expLicense7, expLicense8, expLicense9, expLicense10]
+                                                each expLicense in allExpLicenses
+                                                    .col-xs-12.col-md-6.col-lg-4.mb-3
+                                                        .card.align-items-center
+                                                            .row.card-row.flex-row-reverse.h-100
+                                                                img.col-md-4.img-fluid.exp-img1(src=`./imgs/licenses/Asset ${expLicense.img}.png`, alt="exp")
+                                                                .body.col-md-8.text-left.d-flex.flex-column.justify-content-center.text-start
+                                                                    h6.card-title #{expLicense.title}
+                                                                    p.card-text: small.text-secondary #{expLicense.place}
+
+                                        .carousel-item
+                                            .row.justify-content-center.pb-5
+                                                -const allExpLicenses2 = [expLicense11, expLicense12, expLicense13, expLicense14, expLicense15, expLicense16, expLicense17, expLicense18, expLicense18_1, expLicense19, expLicense19_1, expLicense20]
+                                                each expLicense in allExpLicenses2
+                                                    .col-xs-12.col-md-6.col-lg-4.mb-3
+                                                        .card.align-items-center
+                                                            .row.card-row.flex-row-reverse.h-100
+                                                                img.col-md-4.img-fluid.exp-img1(src=`./imgs/licenses/Asset ${expLicense.img}.png`, alt="exp")
+                                                                .body.col-md-8.text-left.d-flex.flex-column.justify-content-center.text-start
+                                                                    h6.card-title #{expLicense.title}
+                                                                    p.card-text: small.text-secondary #{expLicense.place}
+
+
+                                        .carousel-item
+                                            .row.justify-content-center.pb-5
+                                                -const allExpLicenses3 = [expLicense21, expLicense22, expLicense22_1, expLicense22_2, expLicense23, expLicense23_1, expLicense24, expLicense25, expLicense26, expLicense27]
+                                                each expLicense in allExpLicenses3
+                                                    .col-xs-12.col-md-6.col-lg-4.mb-3
+                                                        .card.align-items-center
+                                                            .row.card-row.flex-row-reverse.h-100
+                                                                img.col-md-4.img-fluid.exp-img1(src=`./imgs/licenses/Asset ${expLicense.img}.png`, alt="exp")
+                                                                .body.col-md-8.text-left.d-flex.flex-column.justify-content-center.text-start
+                                                                    h6.card-title #{expLicense.title}
+                                                                    p.card-text: small.text-secondary #{expLicense.place}
 
 
 
