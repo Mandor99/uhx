@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <title>UHX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="no-scroll">
+    <div class="loader" id="loader"><img class="loader-img" src="./imgs/logos/UHX white.svg" alt="uhx logo"></div>
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+      <div class="container"><a class="navbar-brand brand" href="/"><img class="logo-dimension" src="./imgs/logos/UHX white.svg" alt="uhx logo"></a>
+        <button class="navbar-toggler collapsed position-relative d-flex d-lg-none flex-column justify-content-around icon-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="toggler-icon top-bar"></span><span class="toggler-icon mid-bar"></span><span class="toggler-icon bottom-bar"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item"><a class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3" aria-current="page" href="/" data-toggle="collapse">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3" aria-current="page" href="about.html" data-toggle="collapse">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3" aria-current="page" href="service.html" data-toggle="collapse">خدماتنا</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3" aria-current="page" href="how.html" data-toggle="collapse">آلية العمل</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-6 fw-normal underline-link px-0 text-uppercase text-center pb-3" aria-current="page" href="experience.html" data-toggle="collapse">الخبرات</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white fs-6 fw-normal text-uppercase text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">نحن معك دائما</a>
+              <ul class="dropdown-menu bg-primary-dark py-0">
+                <li class="text-center"><a class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect" href="consultant.html">طلب استشارة</a></li>
+                <li class="text-center"><a class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect" href="join.html">انضم كخبير</a></li>
+                <li class="text-center"><a class="dropdown-item text-white fs-6 fw-normal text-uppercase text-center circle-effect" href="license.html">التراخيص</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-auto pb-3">
+              <button class="download-btn btn rounded-button btn-primary d-flex align-items-center fs-6 gap-2 color-primary bg-white border-0"><img src="./imgs/icons/download (1).png" alt="download profile">الملف الشخصي</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main style="minHeight:100vh;">
+      <header class="banner banner-join d-flex justify-content-center align-items-center"></header>
+      <main class="main-join">
+        <section class="join" style="padding-top: 3rem; padding-bottom: 3rem">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-center pb-4" data-aos="fade-down"><img class="d-none" src="./imgs/icons/arrow-left-line.svg" alt="arrow icon"/>
+              <h3 class="h3 mb-0 color-primary text-uppercase">إنضم كخبير</h3>
+            </div>
+            <div class="join-content-form mt-4">
+              <form class="join-form row g-3" action="">
+                <div class="col-lg-4">
+                  <label class="form-label" for="fullName">إسم الخبير بالكامل</label>
+                  <input class="form-control" id="fullName" type="text">
+                </div>
+                <div class="col-lg-4">
+                  <label class="form-label" for="email">البريد الالكتروني</label>
+                  <input class="form-control" id="email" type="email">
+                </div>
+                <div class="col-lg-4">
+                  <label class="form-label" for="tel">رقم الهاتف</label>
+                  <input class="form-control" id="tel" type="tel">
+                </div>
+                <div class="col-lg-4">
+                  <label class="form-label" for="special">التخصص العام</label>
+                  <input class="form-control" id="special" type="text">
+                </div>
+                <div class="col-lg-4">
+                  <label class="form-label" for="expYears">مجموع سنوات الخبرة العملية</label>
+                  <input class="form-control" id="expYears" type="text">
+                </div>
+                <div class="col-lg-4">
+                  <label class="form-label" for="">هل ترغب بعرض اسمك و صورتك</label>
+                  <div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" id="yes" type="radio" name="namePhoto" value="yes">
+                      <label class="form-check-label" for="yes">نعم</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" id="no" type="radio" name="namePhoto" value="no">
+                      <label class="form-check-label" for="no">لا</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea1">تخصص دقيق</label>
+                  <textarea class="form-control" id="txtArea1" rows="5"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea2">الجهات التي عملتم معها <span class='color-primary'>"ارجو اضافة الموقع الالكتروني لكل جهة"</span></label>
+                  <textarea class="form-control" id="txtArea2" rows="5"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea3">الخدمات التي يمكن تقديمها و الإستشارات التي يمكن الدعم فيها بشكل مفصل <span class='color-primary'>"عربي- انكليزي"</span></label>
+                  <textarea class="form-control" id="txtArea3" rows="5"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea4">الجهات التي حصلتم منها على شهادة أكاديمية <span class='color-primary'>"ارجو اضافة الموقع الالكتروني لكل مؤسسة تعليمية"</span></label>
+                  <textarea class="form-control" id="txtArea4" rows="5"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea5">الجهات التي لديكم فيها عضوية مجلس إدارة أو إستشارة أو تعاون</label>
+                  <textarea class="form-control" id="txtArea5" rows="5"></textarea>
+                </div>
+                <div class="col-lg-6">
+                  <label class="form-label" for="txtArea6">ارجو إضافة أي إقتراحات أو تفاصيل أو معلومات هامة</label>
+                  <textarea class="form-control" id="txtArea6" rows="5"></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="licensesFiles">الرخص المهنية</label>
+                  <input class="form-control" id="licensesFiles" type="file" multiple>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer py-6 overflow-hidden">
+        <div class="container">
+          <div class="row gx-1 justify-content-between">
+            <div class="col-12 col-lg-5">
+              <figure class="figure"><a class="logo-link text-decoration-none" href="/"><img class="figure-img img-fluid logo-footer" src="./imgs/logos/UHX white.svg" alt="uhx logo"></a>
+                <figcaption class="figure-caption fs-6 text-white fw-medium lh-base w-100 caption">بيت الخبراء يفتح أبوابه ويأخذ معك رحلة التغيير من البداية</figcaption>
+              </figure>
+            </div>
+            <div class="col-12 col-lg-2">
+              <h3 class="fs-5 text-white">روابط تهمك</h3>
+              <ul class="list-group gap-2 items"><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="about.html">من نحن</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="experience.html">الخبرات</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="service.html">خدماتنا</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="how.html">آلية العمل</a></ul>
+            </div>
+            <div class="col-12 col-lg-2">
+              <h3 class="fs-5 text-white">نحن معك دائماً</h3>
+              <ul class="list-group gap-2 items"><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="consultant.html">طلب إستشارة</a><a class="footer-link fs-6 text-white fw-medium lh-base text-decoration-none" href="join.html">إنضم كخبير</a></ul>
+              <div class="social-icons d-flex gap-4 mt-4 p-3 pt-0"><a href="https://x.com/UHX_SA"><img class="img-fluid" src="./imgs/icons/twitter.png" alt="twitter" width="24" height="24"></a><a href="https://www.instagram.com/uhx_sa/"><img class="img-fluid" src="./imgs/icons/instagram.png" alt="instagram" width="24" height="24"></a><a href="https://www.linkedin.com/in/uhx-sa/"><img class="img-fluid" src="./imgs/icons/linkedin.png" alt="linkedin" width="24" height="24"></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block"><img class="img-fluid scaled" src="./imgs/background/footer-tree.svg" alt="tree"></div>
+          </div>
+        </div>
+        <div class="block">
+          <p class="m-0">حقوق النشر &copy; 2024 بيت الخبراء الموحد. كل الحقوق محفوظة.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="vendors/owl.carousel.min.js"></script>
+    <script src="vendors/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
