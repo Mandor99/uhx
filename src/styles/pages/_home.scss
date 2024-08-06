@@ -22,6 +22,7 @@
     font-size: 1.5rem;
     line-height: 1.5;
     padding-top: 3rem;
+    text-align: justify;
 
     @include responsiveMin(tab) {
       font-size: 1.2rem !important;
@@ -114,6 +115,7 @@
 
     @include responsiveMax(tab) {
       width: 50% !important;
+      font-size: 1.65rem !important;
     }
   }
 
@@ -256,7 +258,13 @@
     width: 200px !important;
     height: 85px;
     object-fit: contain;
+
+    @include responsiveMax(tab) {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
   }
+
   .owl-nav .owl-next,
   .owl-nav .owl-prev {
     position: absolute;
@@ -381,7 +389,7 @@
   &-figure {
     padding: 2rem 0rem 2rem 0rem; // top right bottom left
     gap: 2rem;
-    height: 250px;
+    height: 260px;
     background-color: #fff;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -424,6 +432,11 @@
 
 .caption-license {
   font-size: 0.9rem;
+  @include responsiveMax(tab) {
+    font-size: 1.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .exp {
@@ -482,15 +495,32 @@
   background-color: #fbfbfb;
   padding: 1rem;
   border: 1px solid #e6e6e6;
-  height: 150px;
-  max-height: 150px;
+  height: 180px;
+  max-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsiveMax(tab) {
+    height: 200px;
+    max-height: 200px;
+  }
 
   .card-title {
     font-size: 0.9rem;
+
+    @include responsiveMax(tab) {
+      font-size: 1.25rem;
+    }
+  }
+  .card-text {
+    @include responsiveMax(tab) {
+      font-size: 1.25rem;
+    }
   }
 
   & .exp-img1 {
-    // height: 52px;
+    height: 135px;
     object-fit: contain;
   }
 }

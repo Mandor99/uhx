@@ -1,7 +1,7 @@
 section.how-work
     .container
         +sectionTitle('آلية العمل')
-        p.service-txt.m-0.w-75.mx-auto.text-center.pt-0
+        p.service-txt.m-0.w-75.mx-auto.text-center.pt-0.custom-txt.custom-width
             span سوف نستضيفك لنتعرف على بعضنا بشكل  افضل و لنسمع  منك ما يدور في رأسك  من طموحات و بناءا عليه  سنقول لك ما نفكر فيه لنحقق هذه الطموحات  وما هي افضل الممارسات.
         ul.timeline
             -const howWork1 = {txt: "آلية تنفيذ الفكرة", aos: "fade-right"}
@@ -14,4 +14,4 @@ section.how-work
                 li.timeline(data-aos=`${how.aos}`)
                     .icon.shadow.d-flex.justify-content-center.align-items-center.color-primary(class=`icon-${index+1}`)
                     details.panel
-                        summary #{how.txt}
+                        summary.custom-txt2 #{how.txt}

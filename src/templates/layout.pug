@@ -14,10 +14,12 @@ html(dir='rtl' lang="ar")
         link(rel="stylesheet" href="vendors/aos.css")
         link(rel='stylesheet', href='css/main.css')
 
-    body.no-scroll
-        include ./components/loader
+    //- body.no-scroll
+    body
+        //- include ./components/loader
+        //- div#all-content.all-content(style={ display:'none'})
         include ./components/navbar
-        main(style={minHeight:'100vh'})
+        main
             block content
         script(src='https://code.jquery.com/jquery-3.7.1.min.js')
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous")

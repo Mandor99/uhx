@@ -7,8 +7,8 @@ block content
 
         section.works
             .container
-                h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
-                p.py-3.fs-5.lh-base.w-50.mx-auto.text-white.text-center لقد عمل خبراءنا في مجالات  مختلفة و قطاعات  ريادية و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
+                h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white.custom-title(data-aos='fade-down') التخصصات
+                p.py-3.fs-5.lh-base.w-50.mx-auto.text-white.text-center.custom-txt.custom-width لقد عمل خبراءنا في مجالات  مختلفة و قطاعات  ريادية و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
                 .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-center.mt-4
                     -const work1 = {img: '1', caption: 'حوكمة مجالس الإدارة'}
                     -const work2 = {img: '2', caption: 'حوكمة الشركات الخاصة والعائلية'}
@@ -37,7 +37,7 @@ block content
                     each work in works
                         figure.work-special.text-center.col(data-aos='zoom-in')
                             img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.svg`, alt="asset", width="85", height="85")
-                            figcaption.lh-base.fs-5.text-white #{work.caption}
+                            figcaption.lh-base.fs-5.text-white.custom-txt2 #{work.caption}
 
     section.services.bg-gray2
         .container
@@ -45,14 +45,14 @@ block content
             .row.justify-content-between.mt-4.service-wrapper
                 .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service3.png", alt="service 1", data-aos='zoom-out-up')
                 .col-12.col-lg-8: .content(data-aos='zoom-in-left')
-                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase إن الإنفراد الذي أضفناه في بيت الخيراء الموحد
-                    p.service-txt.m-0.w-100
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 إن الإنفراد الذي أضفناه في بيت الخيراء الموحد
+                    p.service-txt.m-0.w-100.custom-txt
                         span هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفك, و تابعنا العمل من مكانك لنتأكد من جودة  الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية  وهل يمكن تطبيقها فعلاً.
             .row.flex-row-reverse.justify-content-between.mt-4
                 .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service4.png", alt="service 1", data-aos='zoom-out-down')
                 .col-12.col-lg-8: .content(data-aos='zoom-in-right')
-                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase خبراءنا يضعون حجر الأساس بعلمهم
-                    p.service-txt.m-0.w-100
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 خبراءنا يضعون حجر الأساس بعلمهم
+                    p.service-txt.m-0.w-100.custom-txt
                         span إن التقارير الجميلة  و البيانات الطموحة  تحتاج لمن يقرأها  بيعن الخبير  و يتأكد فاعليتها . و لذلك خبراءنا يضعون حجر الأساس  بعلمهم, يوثقون القواعد و الأركان  بمعرفتهم  و يراقبون البناء  بخبراتهم. <span class='fw-bold'>حتى يكون لدينا  صرحاً من المعلومات  يحمي أهدافنا.</span>
 
 

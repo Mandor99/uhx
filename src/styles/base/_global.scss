@@ -44,7 +44,7 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
@@ -142,5 +142,71 @@ p > span {
     width: 0.3rem;
     margin-inline-end: 0.5rem;
     background-color: #fff;
+  }
+}
+
+.custom-title {
+  @include responsiveMax(tab) {
+    font-size: 2.25rem !important;
+  }
+}
+
+.custom-title2 {
+  @include responsiveMax(tab) {
+    font-size: 2rem !important;
+  }
+}
+
+.custom-title3 {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-txt {
+  @include responsiveMax(tab) {
+    font-size: 1.65rem !important;
+  }
+}
+
+.custom-txt2 {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-txt3 {
+  @include responsiveMax(tab) {
+    font-size: 1.25rem !important;
+  }
+}
+
+.custom-input {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-caption {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-summary {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-link {
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-width {
+  @include responsiveMax(tab) {
+    width: 100% !important;
   }
 }

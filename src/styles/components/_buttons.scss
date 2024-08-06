@@ -5,6 +5,10 @@
   transition: all 0.1s ease;
   text-transform: capitalize;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
+  @include responsiveMax(tab) {
+    font-size: 1.5rem !important;
+  }
 }
 .rounded-button {
   border-radius: 999px;

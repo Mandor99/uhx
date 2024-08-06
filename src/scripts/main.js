@@ -1,13 +1,17 @@
 $(function () {
 
-    $(window).on('load', function () {
-        $('#loader').fadeOut();
-        $('body').removeClass('no-scroll');
-        setTimeout(() => {
-            $('#loader').addClass('hidden');
-            $('#loader').hide()
-        }, 2000)
-    });
+    // $(window).on('load', function () {
+    //     console.log('Window fully loaded');
+    //     $('#loader').fadeOut('slow', function () {
+    //         $('body').removeClass('no-scroll');
+    //         $('#all-content').show();
+    //         setTimeout(() => {
+    //             $('#loader').addClass('hidden');
+    //             $('#loader').hide()
+    //             console.log('Loader hidden');
+    //         }, 1300);
+    //     });
+    // });
 
     $(window).on("scroll", function (e) {
         if ($(this).scrollTop() > 80) {

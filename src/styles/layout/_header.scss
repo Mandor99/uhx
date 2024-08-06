@@ -167,6 +167,9 @@
       @include responsiveMin(tab) {
         font-weight: bold !important;
       }
+      @include responsiveMax(tab) {
+        font-size: 2.5rem !important;
+      }
     }
   }
 }

@@ -5,8 +5,8 @@ block content
    section.intro.d-flex.justify-content-center.align-items-center
     .container
         .d-flex.flex-column.justify-content-center.align-items-center
-            h2.color-primary.fs-2.fw-semibold.fw-lg-bold.lh-base(data-aos='fade-down') لقد اجتمعنا في هذا البيت من كل مكان
-            p.fs-4.fw-normal.fw-lg-medium.lh-base.w-75.text-center(data-aos='fade-down') لنعطي من خبراتنا و معرفتنا كل من يريد معلومة أو يبحث عن متخصص في إحدى المجالات ولديه الخبرة من أرض الواقع في العديد من التخصصات المالية و الإدارية و الأنشطة التجارية المختلفة.
+            h2.color-primary.fs-2.fw-semibold.fw-lg-bold.lh-base.custom-title(data-aos='fade-down') لقد اجتمعنا في هذا البيت من كل مكان
+            p.fs-4.fw-normal.fw-lg-medium.lh-base.w-75.text-center.custom-txt(data-aos='fade-down') لنعطي من خبراتنا و معرفتنا كل من يريد معلومة أو يبحث عن متخصص في إحدى المجالات ولديه الخبرة من أرض الواقع في العديد من التخصصات المالية و الإدارية و الأنشطة التجارية المختلفة.
             .buttons-group.d-flex.align-items-start.gap-3(data-aos='fade-right')
                 button.btn.circle-btn.button-primary(type="button") من نحن
                 button.btn.circle-btn.button-light(type="button") تواصل معنا
@@ -23,14 +23,14 @@ block content
                figure.slogan-figure.text-center.shadow.row.flex-column.align-items-center(data-aos=`${slogan.dataAos}`)
                   img.img-fluid.slogan-img(src=`./imgs/icons/${slogan.img}.png`, alt="client")
                   figcaption.fs-4.fw-bold.color-primary
-                     h5 #{slogan.caption[0]}
-                     h5 #{slogan.caption[1]}
+                     h5.custom-title3 #{slogan.caption[0]}
+                     h5.custom-title3 #{slogan.caption[1]}
    section.ceo
       .container
          +sectionTitle('كلمة الرئيس التنفيذي')
          .custom-row.row.justify-content-between
             .col-12.col-lg-8
-               p.ceo-word(data-aos='fade-right')
+               p.ceo-word.custom-txt(data-aos='fade-right')
                   span إن مبدأ الإستشارة في حياتنا هو نهج صحيح يجب أن نضعه من أولوياتنا<span class='color-primary'> لنضمن بمشيئة الله الإستقرار و الاستمرار و النجاح لأعمالنا و منشآتنا</span>. و لأن هذا المجال يكمن نجاحه في تحديد الأهداف بشكل صحيح فإن <span class='color-primary'>الوصول الى تحقيق هذه الأهداف يعتمد على اتباع خطوات صحيحة و واضحة</span> و مجربة و بالتالي نصنع منهجية سلسة و مرنة تؤدي بنا الى تحقيق المستهدفات. و بناءاً عليه قمنا بتشييد <span class='color-primary fw-bold'>”بيت الخبراء الموحد”</span> ليجتمع فيه خبراءنا مع رواد الأعمال و أصحاب المنشآت و نمكنهم من الوصول الى أهدافهم من خلال خبير متخصص في مجالهم من واقع خبرة عملية ناجحة
 
             .col-12.col-lg-4
@@ -40,8 +40,8 @@ block content
    section.exp.bg-gray2.overflow-x-hidden
       //- .container
       .exp-body.text-center
-         h3.fs-bold.h3.mb-0.color-primary.text-uppercase الخبرات
-         p.txt(data-aos='zoom-in-up') لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات العمل التي إنضم اليها خبراءنا خلال مسيرتهم المهنية
+         h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title الخبرات
+         p.txt.custom-txt(data-aos='zoom-in-up') لقد عمل خبراءنا في مجالات مختلفة و قطاعات ريادية و سنستعرض هنا جهات العمل التي إنضم اليها خبراءنا خلال مسيرتهم المهنية
       #scrollableElement.clients.position-relative.overflow-hidden.w-100
          .marquee.d-flex.justify-content-between
             -const clientsLogo = ['94','95', '96', '97', '98', '99', '100', '101', '102']
@@ -54,7 +54,7 @@ block content
 
    section.works
       .container
-         h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white(data-aos='fade-down') التخصصات
+         h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white.custom-title(data-aos='fade-down') التخصصات
          .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-between.mt-4
             -const work1 = {img: '1', caption: 'حوكمة مجالس الإدارة'}
             -const work2 = {img: '2', caption: 'حوكمة الشركات الخاصة والعائلية'}
@@ -68,7 +68,7 @@ block content
             each work in works
                figure.work-special.text-center.col(data-aos='zoom-in')
                   img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.svg`, alt="asset", width="85", height="85")
-                  figcaption.lh-base.fs-5.text-white #{work.caption}
+                  figcaption.lh-base.fs-5.text-white.custom-txt2 #{work.caption}
          .exp-btn.text-center.pt-4
             a.works-btn.btn.circle-btn.button-light(href='service.html') مشاهدة المزيد
    include ../components/timeline
@@ -85,10 +85,10 @@ block content
             each client in clients
                figure.slider-figure.text-center.item.client-fig.shadow.d-flex.flex-column.align-items-center
                   img.img-fluid.client-logo(src=`./imgs/logos/client${client.img}`, alt="client")
-                  figcaption.fs-5.fw-bold.color-primary #{client.title}
+                  figcaption.fs-5.fw-bold.color-primary.custom-txt2 #{client.title}
    section.features
       .container
-         h3.h3.mb-0.text-white.text-uppercase.mb-4(data-aos='fade-down') بماذا نتميز ...؟
+         h3.h3.mb-0.text-white.text-uppercase.mb-4.custom-title(data-aos='fade-down') بماذا نتميز ...؟
          #features-carousel.carousel.slide(data-bs-ride="carousel")
             .carousel-indicators
                button.active(type='button', data-bs-target='#features-carousel', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
@@ -96,11 +96,11 @@ block content
             .carousel-inner
                .carousel-item.active
                   //- .carousel-caption.d-md-block
-                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن الإنفراد الذي أضفناه في بيت الخبراء الموحد هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفّك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعلاً.
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text.custom-txt إن الإنفراد الذي أضفناه في بيت الخبراء الموحد هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفّك, و تابعنا العمل من مكانك لنتأكد من جودة الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية و هل يمكن تطبيقها فعلاً.
 
                .carousel-item
                   //- .carousel-caption.d-md-block
-                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text إن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها. ولذلك خبرائنا يضعون حجر الأساس بعلمهم,  يوثّقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم. حتى يكن لدينا صرحاً من المعلومات يحمي أهدافنا.
+                  p.fs-5.w-75.text-center.text-white.mx-auto.lh-lg.feature-text.custom-txt إن التقارير الجميلة و البيانات الطموحة تحتاج لمن يقرأها بعين الخبير و يتأكد فاعليتها. ولذلك خبرائنا يضعون حجر الأساس بعلمهم,  يوثّقون القواعد و الأركان بمعرفتهم و يراقبون البناء بخبراتهم. حتى يكن لدينا صرحاً من المعلومات يحمي أهدافنا.
 
    include ../components/form1
 
