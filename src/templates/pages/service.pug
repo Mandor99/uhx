@@ -7,53 +7,53 @@ block content
 
         section.works
             .container
-                h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white.custom-title(data-aos='fade-down') التخصصات
-                p.py-3.fs-5.lh-base.w-50.mx-auto.text-white.text-center.custom-txt.custom-width لقد عمل خبراءنا في مجالات  مختلفة و قطاعات  ريادية و سنستعرض هنا جهات العمل التي انضم اليها خبراءنا خلال مسيرتهم المهنية
+                h3.fs-bold.h3.mb-0.text-uppercase.text-center.text-white.custom-title(data-aos='fade-down') #{locales.services["works"]["title"]}
+                p.py-3.fs-5.lh-base.w-50.mx-auto.text-white.text-center.custom-txt.custom-width #{locales.services["works"]["txt"]["normal1"]}
                 .row.row-cols-2.row-cols-sm-2.row-cols-lg-4.justify-content-center.mt-4
-                    -const work1 = {img: '1', caption: 'حوكمة مجالس الإدارة'}
-                    -const work2 = {img: '2', caption: 'حوكمة الشركات الخاصة والعائلية'}
-                    -const work3 = {img: '3', caption: 'تطوير الأعمال والإستراتيجية'}
-                    -const work4 = {img: '4', caption: 'إستراتيجيات رأس المال البشري'}
-                    -const work5 = {img: '5', caption: 'إستقطاب وبناء الكفاءات البشرية'}
-                    -const work6 = {img: '6', caption: '⁠الإستشارات القانونية'}
-                    -const work7 = {img: '7', caption: 'الأبحاث وإستراتيجيات التسويق'}
-                    -const work8 = {img: '8', caption: 'التمويل والصكوك الاسلامية'}
-                    -const work9 = {img: '9', caption: 'التقنية المالية'}
-                    -const work10 = {img: '10', caption: 'الإستعداد للإستثمار والجولات الإستثمارية'}
-                    -const work11 = {img: '11', caption: 'المحاسبة والمالية'}
-                    -const work12 = {img: '12', caption: 'الإلتزام وإدارة المخاطر'}
-                    -const work13 = {img: '13', caption: 'الترتيب والإدراج'}
-                    -const work14 = {img: '14', caption: 'المساهمات العقارية'}
-                    -const work15 = {img: '15', caption: 'إدارة الأملاك والتقييم'}
-                    -const work16 = {img: '16', caption: 'الجودة وتجربة العميل'}
-                    -const work17 = {img: '17', caption: 'الضيافة والفندقة والسياحة'}
-                    -const work18 = {img: '18', caption: 'التجارة الإلكترونية'}
-                    -const work19 = {img: '19', caption: 'الهوية البصرية'}
-                    -const work20 = {img: '20', caption: 'التعليم والتدريب'}
-                    -const work21 = {img: '21', caption: 'الفعاليات والمناسبات'}
-                    -const work22 = {img: '22', caption: 'سلاسل الإمداد'}
-                    -const work23 = {img: '23', caption: '⁠الشبكات والخدمات التقنية'}
+                    -const work1 = {img: '1', caption: `${locales.services["works"]["caption1"]}`}
+                    -const work2 = {img: '2', caption: `${locales.services["works"]["caption2"]}`}
+                    -const work3 = {img: '3', caption: `${locales.services["works"]["caption3"]}`}
+                    -const work4 = {img: '4', caption: `${locales.services["works"]["caption4"]}`}
+                    -const work5 = {img: '5', caption: `${locales.services["works"]["caption5"]}`}
+                    -const work6 = {img: '6', caption: `${locales.services["works"]["caption6"]}`}
+                    -const work7 = {img: '7', caption: `${locales.services["works"]["caption7"]}`}
+                    -const work8 = {img: '8', caption: `${locales.services["works"]["caption8"]}`}
+                    -const work9 = {img: '9', caption: `${locales.services["works"]["caption9"]}`}
+                    -const work10 = {img: '10', caption: `${locales.services["works"]["caption10"]}`}
+                    -const work11 = {img: '11', caption: `${locales.services["works"]["caption11"]}`}
+                    -const work12 = {img: '12', caption: `${locales.services["works"]["caption12"]}`}
+                    -const work13 = {img: '13', caption: `${locales.services["works"]["caption13"]}`}
+                    -const work14 = {img: '14', caption: `${locales.services["works"]["caption14"]}`}
+                    -const work15 = {img: '15', caption: `${locales.services["works"]["caption15"]}`}
+                    -const work16 = {img: '16', caption: `${locales.services["works"]["caption16"]}`}
+                    -const work17 = {img: '17', caption: `${locales.services["works"]["caption17"]}`}
+                    -const work18 = {img: '18', caption: `${locales.services["works"]["caption18"]}`}
+                    -const work19 = {img: '19', caption: `${locales.services["works"]["caption19"]}`}
+                    -const work20 = {img: '20', caption: `${locales.services["works"]["caption20"]}`}
+                    -const work21 = {img: '21', caption: `${locales.services["works"]["caption21"]}`}
+                    -const work22 = {img: '22', caption: `${locales.services["works"]["caption22"]}`}
+                    -const work23 = {img: '23', caption: `${locales.services["works"]["caption23"]}`}
                     -const works = [work1, work2, work3, work4, work5, work6, work7, work8, work9, work10,  work11, work12, work13, work14, work15, work16, work17, work18, work19, work20, work21, work22, work23]
                     each work in works
                         figure.work-special.text-center.col(data-aos='zoom-in')
-                            img.img-fluid(src=`./imgs/specialization_icons/Asset ${work.img}.svg`, alt="asset", width="85", height="85")
+                            img.img-fluid(src=`../imgs/specialization_icons/Asset ${work.img}.svg`, alt="asset", width="85", height="85")
                             figcaption.lh-base.fs-5.text-white.custom-txt2 #{work.caption}
 
     section.services.bg-gray2
         .container
-            +sectionTitle('بماذا نتميز ')
+            +sectionTitle(`${locales.services["service2"]["title"]}`)
             .row.justify-content-between.mt-4.service-wrapper
-                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service3.png", alt="service 1", data-aos='zoom-out-up')
+                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="../imgs/background/service3.png", alt="service 1", data-aos='zoom-out-up')
                 .col-12.col-lg-8: .content(data-aos='zoom-in-left')
-                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 إن الإنفراد الذي أضفناه في بيت الخيراء الموحد
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 #{locales.services["service2"]["heading1"]}
                     p.service-txt.m-0.w-100.custom-txt
-                        span هي خدمة الإشراف الإستشاري لقد وضعنا أنفسنا في صفك, و تابعنا العمل من مكانك لنتأكد من جودة  الدراسات المقدمة لك, نناقشها نيابة عنك و نراجعها و نتأكد من دقتها و ماذا ينقصها لتكن واقعية  وهل يمكن تطبيقها فعلاً.
+                        span #{locales.services["service2"]["txt1"]["normal1"]}
             .row.flex-row-reverse.justify-content-between.mt-4
-                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="./imgs/background/service4.png", alt="service 1", data-aos='zoom-out-down')
+                .col-12.col-lg-4.text-center: img.img-fluid.service-img(src="../imgs/background/service4.png", alt="service 1", data-aos='zoom-out-down')
                 .col-12.col-lg-8: .content(data-aos='zoom-in-right')
-                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 خبراءنا يضعون حجر الأساس بعلمهم
+                    h3.fs-bold.h3.mb-0.color-primary.text-uppercase.custom-title2 #{locales.services["service2"]["heading2"]}
                     p.service-txt.m-0.w-100.custom-txt
-                        span إن التقارير الجميلة  و البيانات الطموحة  تحتاج لمن يقرأها  بيعن الخبير  و يتأكد فاعليتها . و لذلك خبراءنا يضعون حجر الأساس  بعلمهم, يوثقون القواعد و الأركان  بمعرفتهم  و يراقبون البناء  بخبراتهم. <span class='fw-bold'>حتى يكون لدينا  صرحاً من المعلومات  يحمي أهدافنا.</span>
+                        span #{locales.services["service2"]["txt2"]["normal1"]}<span class='fw-bold'> #{locales.services["service2"]["txt2"]["bold1"]}</span>
 
 
     include ../components/footer

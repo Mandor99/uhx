@@ -3,30 +3,29 @@ footer.footer.py-6.overflow-hidden
         .row.gx-1.justify-content-between
             .col-12.col-lg-5
                 figure.figure
-                    a.logo-link.text-decoration-none(href='/')
-                        img.figure-img.img-fluid.logo-footer(src="./imgs/logos/UHX white.svg", alt="uhx logo")
-                    figcaption.figure-caption.fs-6.text-white.fw-medium.lh-base.w-100.caption.custom-txt2 بيت الخبراء يفتح أبوابه ويأخذ معك رحلة التغيير من البداية
-
+                    a.logo-link.text-decoration-none(href='index.html')
+                        img.figure-img.img-fluid.logo-footer(src="../imgs/logos/UHX white.svg", alt="uhx logo")
+                    figcaption.figure-caption.fs-6.text-white.fw-medium.lh-base.w-100.caption.custom-txt2 #{locales.footer['logoCaption']}
             .col-12.col-lg-2
-                h3.fs-5.text-white.custom-title2 روابط تهمك
+                h3.fs-5.text-white.custom-title2 #{locales.footer['title2']}
                 ul.list-group.gap-2.items
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='about.html') من نحن
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='experience.html') الخبرات
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='service.html') خدماتنا
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='how.html') آلية العمل
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='about.html') #{locales.footer['link1']}
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='experience.html') #{locales.footer['link2']}
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='service.html') #{locales.footer['link3']}
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='how.html') #{locales.footer['link4']}
             .col-12.col-lg-2
-                h3.fs-5.text-white نحن معك دائماً
+                h3.fs-5.text-white #{locales.footer['title3']}
                 ul.list-group.gap-2.items
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='consultant.html') طلب إستشارة
-                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='join.html') إنضم كخبير
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='consultant.html') #{locales.footer['link5']}
+                    a.footer-link.custom-txt2.fs-6.text-white.fw-medium.lh-base.text-decoration-none(href='join.html') #{locales.footer['link6']}
                 .social-icons.d-flex.gap-4.mt-4.p-3.pt-0
-                    a(href='https://x.com/UHX_SA'): img.img-fluid(src="./imgs/icons/twitter.png", alt="twitter" width='24', height='24')
-                    a(href='https://www.instagram.com/uhx_sa/'): img.img-fluid(src="./imgs/icons/instagram.png", alt="instagram" width='24' height='24')
-                    a(href='https://www.linkedin.com/in/uhx-sa/'): img.img-fluid(src="./imgs/icons/linkedin.png", alt="linkedin" width='24' height='24')
+                    a(href='https://x.com/UHX_SA'): img.img-fluid(src="../imgs/icons/twitter.png", alt="twitter" width='24', height='24')
+                    a(href='https://www.instagram.com/uhx_sa/'): img.img-fluid(src="../imgs/icons/instagram.png", alt="instagram" width='24' height='24')
+                    a(href='https://www.linkedin.com/in/uhx-sa/'): img.img-fluid(src="../imgs/icons/linkedin.png", alt="linkedin" width='24' height='24')
             .col-12.col-md-6.col-lg-3.d-none.d-lg-block
-                img.img-fluid.scaled(src="./imgs/background/footer-tree.svg", alt="tree")
+                img.img-fluid.scaled(src="../imgs/background/footer-tree.svg", alt="tree")
     .block
-        p.m-0.mt-3.custom-txt2 حقوق النشر &copy; 2024 بيت الخبراء الموحد. كل الحقوق محفوظة.
+        p.m-0.mt-3.custom-txt2!= locales.footer['copyRights']
         //- p.m-0 &copy; Copyright 2024 NBB - Made with  💚  proudly from Saudi  - All Rights Reserved
 
 

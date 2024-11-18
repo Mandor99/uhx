@@ -5,53 +5,53 @@ block content
     main.main-join
         section.join(style='padding-top: 3rem; padding-bottom: 3rem')
             .container
-                +sectionTitle('إنضم كخبير')
+                +sectionTitle(`${locales.join["title"]}`)
                 .join-content-form.mt-4
                     form.join-form.row.g-3(action="")
                         .col-lg-4
-                            label.form-label.custom-txt2(for='fullName') إسم الخبير بالكامل
+                            label.form-label.custom-txt2(for='fullName') #{locales.join["label1"]}
                             input#fullName.form-control.custom-txt2(type='text')
                         .col-lg-4
-                            label.form-label.custom-txt2(for='email') البريد الالكتروني
+                            label.form-label.custom-txt2(for='email') #{locales.join["label2"]}
                             input#email.form-control.custom-txt2(type='email')
                         .col-lg-4
-                            label.form-label.custom-txt2(for='tel') رقم الهاتف
+                            label.form-label.custom-txt2(for='tel') #{locales.join["label3"]}
                             input#tel.form-control.custom-txt2(type='tel')
                         .col-lg-4
-                            label.form-label.custom-txt2(for='special') التخصص العام
+                            label.form-label.custom-txt2(for='special') #{locales.join["label4"]}
                             input#special.form-control.custom-txt2(type='text')
                         .col-lg-4
-                            label.form-label.custom-txt2(for='expYears') مجموع سنوات الخبرة العملية
+                            label.form-label.custom-txt2(for='expYears') #{locales.join["label5"]}
                             input#expYears.form-control.custom-txt2(type='text')
                         .col-lg-4
-                            label.form-label.custom-txt2(for='') هل ترغب بعرض اسمك و صورتك
+                            label.form-label.custom-txt2(for='') #{locales.join["label6"]}
                             div
                                 .form-check.form-check-inline.custom-txt2
                                     input#yes.form-check-input(type='radio', name='namePhoto', value='yes')
-                                    label.form-check-label.custom-txt2(for='yes') نعم
+                                    label.form-check-label.custom-txt2(for='yes') #{locales.join["label7"]}
                                 .form-check.form-check-inline.custom-txt2
                                     input#no.form-check-input(type='radio', name='namePhoto', value='no')
-                                    label.form-check-label.custom-txt2(for='no') لا
+                                    label.form-check-label.custom-txt2(for='no') #{locales.join["label8"]}
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea1') تخصص دقيق
+                            label.form-label.custom-txt2(for='txtArea1') #{locales.join["label9"]}
                             textarea#txtArea1.form-control.custom-txt2(rows='5')
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea2') الجهات التي عملتم معها <span class='color-primary'>"ارجو اضافة الموقع الالكتروني لكل جهة"</span>
+                            label.form-label.custom-txt2(for='txtArea2') #{locales.join["label10"]} <span class='color-primary'>#{locales.join["extraForLabel10"]}</span>
                             textarea#txtArea2.form-control.custom-txt2(rows='5')
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea3') الخدمات التي يمكن تقديمها و الإستشارات التي يمكن الدعم فيها بشكل مفصل <span class='color-primary'>"عربي- انكليزي"</span>
+                            label.form-label.custom-txt2(for='txtArea3') #{locales.join["label11"]}<span class='color-primary'>#{locales.join["extraForLabel11"]}</span>
                             textarea#txtArea3.form-control.custom-txt2(rows='5')
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea4') الجهات التي حصلتم منها على شهادة أكاديمية <span class='color-primary'>"ارجو اضافة الموقع الالكتروني لكل مؤسسة تعليمية"</span>
+                            label.form-label.custom-txt2(for='txtArea4') #{locales.join["label12"]}<span class='color-primary'>#{locales.join["extraForLabel12"]}</span>
                             textarea#txtArea4.form-control.custom-txt2(rows='5')
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea5') الجهات التي لديكم فيها عضوية مجلس إدارة أو إستشارة أو تعاون
+                            label.form-label.custom-txt2(for='txtArea5') #{locales.join["label13"]}
                             textarea#txtArea5.form-control.custom-txt2(rows='5')
                         .col-lg-6
-                            label.form-label.custom-txt2(for='txtArea6') ارجو إضافة أي إقتراحات أو تفاصيل أو معلومات هامة
+                            label.form-label.custom-txt2(for='txtArea6') #{locales.join["label14"]}
                             textarea#txtArea6.form-control.custom-txt2(rows='5')
                         .col-12
-                            label.form-label.custom-txt2(for='licensesFiles') الرخص المهنية
+                            label.form-label.custom-txt2(for='licensesFiles') #{locales.join["label15"]}
                             input#licensesFiles.form-control.custom-txt2(type='file', multiple)
 
 

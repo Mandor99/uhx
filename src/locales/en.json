@@ -1,10 +1,244 @@
 {
-    "title": "My Multi-Language Project",
-    "welcome": "Welcome to the Home Page",
-    "about": "About Us",
-    "homePageText": "This is the English index page.",
-    "aboutPageText": "This is the English about page.",
-    "goToAbout": "Go to About Page",
-    "goToHome": "Go to Home Page",
-    "viewInArabic": "عرض بالعربية"
+    "title": "Multilingual Project",
+    "viewInEnglish": "View in English",
+    "navItemm1": "Home",
+    "navbar": {
+        "navItemm1": "Home",
+        "navItem2": "About Us",
+        "navItem3": "Our Services",
+        "navItem4": "How It Works",
+        "navItem5": "Expertise",
+        "navDropDownBtn": "Here For You",
+        "dropDownItem1": "Request Consultation",
+        "dropDownItem2": "Join as Expert",
+        "dropDownItem3": "Licenses",
+        "downloadBtn": "Profile",
+        "languageBtn": "العربية"
+    },
+    "headers": {
+        "home": "The Experts' House Opens Its Doors and Takes You on a Journey of Change from the Beginning",
+        "about": "We have gathered here from everywhere",
+        "about2": "To share our knowledge and experience with anyone seeking information or looking for a specialist in any field, with real-world expertise in various financial, administrative, and business sectors."
+    },
+    "cards": {
+        "title": "In Our House, an Expert",
+        "card1": {
+            "title": "Establishment",
+            "body": "Through our experience as founders of the Experts' House, we have gained many friends, colleagues, and acquaintances in various fields. No matter what your project or goal is, we will search within our house for what meets your needs, or we may host someone specifically for your project to fulfill your request.",
+            "extra": ""
+        },
+        "card2": {
+            "title": "Goals",
+            "body": "We give our experts the opportunity to practice their passion by sharing their knowledge, and we provide our clients with quality, speed of execution, and results that meet their ambitions and goals without complications or delays.",
+            "extra": ""
+        },
+        "card3": {
+            "title": "Our Vision",
+            "body": "It is to contribute to the establishment of national institutions working with the concept of sustainability and continuity, directly supporting the pillars of the national economy, by applying institutional work standards, restructuring, and establishing solid foundations and infrastructure. This will be done through a set of services and programs that create a good and professional work environment and a clear strategy with one goal: ",
+            "extra": "\"Governance and Sustainability\""
+        }
+    },
+    "footer": {
+        "logoCaption": "The Experts' House Opens Its Doors and Takes You on a Journey of Change from the Beginning",
+        "title2": "Useful Links",
+        "link1": "About Us",
+        "link2": "Expertise",
+        "link3": "Our Services",
+        "link4": "How It Works",
+        "title3": "We Are Always Here For You",
+        "link5": "Request Consultation",
+        "link6": "Join as Expert",
+        "copyRights": "Copyright &copy; 2024 Unified Experts' House. All rights reserved."
+    },
+    "form1": {
+        "title": "We Are Always Here For You",
+        "heading": "Request Consultation",
+        "txt": {
+            "normal1": "Thank you for your interest in",
+            "normal2": "Contact us and share your questions, suggestions, and ideas. We are always happy to hear from you.",
+            "bold1": "\"Unified Experts' House\"!"
+        },
+        "placeholder1": "First Name",
+        "placeholder2": "Last Name",
+        "placeholder3": "Email",
+        "placeholder4": "Phone Number",
+        "placeholder5": "Consultation Details",
+        "submitBtn": "Submit"
+    },
+    "services": {
+        "service1": {
+            "title": "Our Services",
+            "heading1": "Creating Success Stories",
+            "heading2": "Achieving Sustainability",
+            "txt1": {
+                "normal1": "When you face an obstacle or have an idea and perhaps aspire for certain development in a sector or at the enterprise level, then",
+                "normal2": "opens its doors for any development or change and takes you on the journey of transformation from the beginning. Every client of the Unified Experts' House is a guest who receives full attention and discussion until the idea is fully formed.",
+                "bold1": "The Experts' House"
+            },
+            "txt2": {
+                "normal1": "We aim to be the house for any organization that wishes to reorganize and move towards an organized institutional work by applying quality, governance, and development standards that match both national and international aspirations, helping organizations – whether emerging or medium and small enterprises – to a more stable and sustainable level.",
+                "bold1": "A More Stable and Stronger Foundation"
+            }
+        },
+        "service2": {
+            "title": "What Sets Us Apart",
+            "heading1": "The Uniqueness We Added in the Unified Experts' House",
+            "heading2": "Our Experts Lay the Foundation with Their Knowledge",
+            "txt1": {
+                "normal1": "It is the consulting supervision service. We place ourselves at your side, monitoring the work from your location to ensure the quality of the studies provided to you. We discuss them on your behalf, review them, and make sure they are accurate and applicable."
+            },
+            "txt2": {
+                "normal1": "Beautiful reports and ambitious data need someone to read them with the eye of an expert and verify their effectiveness. Our experts lay the foundation with their knowledge, document the rules and pillars with their expertise, and supervise the process with their experience.",
+                "bold1": "So that we have a foundation of information that protects our goals."
+            }
+        },
+        "works": {
+            "title": "Specializations",
+            "txt": {
+                "normal1": "Our experts have worked in various fields and pioneering sectors, and here we will showcase the organizations that our experts have joined during their professional careers."
+            },
+            "caption1": "Governance of Boards of Directors",
+            "caption2": "Governance of Private and Family Companies",
+            "caption3": "Business and Strategy Development",
+            "caption4": "Human Capital Strategies",
+            "caption5": "Attracting and Building Human Talent",
+            "caption6": "Legal Consultations",
+            "caption7": "Research and Marketing Strategies",
+            "caption8": "Finance and Islamic Sukuk",
+            "caption9": "FinTech",
+            "caption10": "Investment Readiness and Investment Rounds",
+            "caption11": "Accounting and Finance",
+            "caption12": "Compliance and Risk Management",
+            "caption13": "Listing and Registration",
+            "caption14": "Real Estate Contributions",
+            "caption15": "Property Management and Valuation",
+            "caption16": "Quality and Customer Experience",
+            "caption17": "Hospitality, Hotels, and Tourism",
+            "caption18": "E-commerce",
+            "caption19": "Visual Identity",
+            "caption20": "Education and Training",
+            "caption21": "Events and Occasions",
+            "caption22": "Supply Chains",
+            "caption23": "Networks and Technical Services"
+        }
+    },
+    "timeline": {
+        "title": "How It Works",
+        "txt": {
+            "normal": "We will host you to get to know each other better and hear from you what your aspirations are. Based on that, we will tell you what we think to achieve these aspirations and what the best practices are."
+        },
+        "step1": "Idea Execution Process",
+        "step2": "The Expert or Team for This Task",
+        "step3": "What Expertise Fits Your Project",
+        "step4": "Execution Time and Cost",
+        "step5": "Then we ask you to set an appointment for the expert to explain in detail what will be done."
+    },
+    "exp": {
+        "title": "Where Our Experts Worked",
+        "txt": {
+            "normal": "Our experts have worked in different fields and pioneering sectors. Here, we will showcase the organizations our experts have joined during their careers."
+        },
+        "item1": {
+            "heading": "Practical Experience"
+        },
+        "item2": {
+            "heading": "Educational Experience",
+            "txt": {
+                "normal": "Since our experts have worked in the most important and largest vital sectors in Saudi Arabia and held many leadership positions, they have certainly earned various certificates from significant universities that paved the way for them to reach prestigious jobs in the Saudi job market. Here you will find a summary of the educational institutions that shaped our experts' educational background."
+            }
+        },
+        "item3": {
+            "heading": "Professional Licenses",
+            "txt": {
+                "normal": "Throughout their careers, our experts have added professional licenses and certificates to their practical experience, enhancing their capabilities and increasing their knowledge in their fields. Here we present these licenses for you to review and understand the professionalism of our experts."
+            }
+        }
+    },
+    "license": {
+        "title": "Licenses",
+        "caption1": "Financial Consultations",
+        "caption2": "Governance, Risk, and Compliance Consultations",
+        "caption3": "Administrative Consultations",
+        "alt1": "Financial Consultations",
+        "alt2": "Governance, Risk, and Compliance Consultations",
+        "alt3": "Administrative Consultations"
+    },
+    "join": {
+        "title": "Join as Expert",
+        "label1": "Full Name of Expert",
+        "label2": "Email",
+        "label3": "Phone Number",
+        "label4": "General Specialization",
+        "label5": "Total Years of Work Experience",
+        "label6": "Do you want to display your name and photo?",
+        "label7": "Yes",
+        "label8": "No",
+        "label9": "Specific Specialization",
+        "label10": "Organizations You Worked With",
+        "extraForLabel10": "\"Please add the website for each organization.\"",
+        "label11": "Services You Can Provide and Consultations You Can Support (in detail)",
+        "extraForLabel11": "\"Arabic-English\"",
+        "label12": "Organizations from Which You Obtained Academic Certificates",
+        "extraForLabel12": "\"Please add the website for each educational institution.\"",
+        "label13": "Organizations Where You Hold Board Membership, Consultancy, or Collaboration",
+        "label14": "Please Add Any Suggestions, Details, or Important Information",
+        "label15": "Professional Licenses"
+    },
+    "intro": {
+        "title": "We Have Gathered Here from All Around",
+        "txt": {
+            "normal": "To share our expertise and knowledge with anyone seeking information or a specialist in a field with real-world experience in various financial, administrative, and business activities."
+        },
+        "btn1": "About Us",
+        "btn2": "Contact Us"
+    },
+    "slogan": {
+        "title": "Unified Experts' House"
+    },
+    "ceo": {
+        "title": "Message from the CEO",
+        "txt": {
+            "normal1": "The principle of consultation in our lives is a correct approach that we must prioritize",
+            "normal2": "to ensure, God willing, stability, continuity, and success for our businesses and institutions.",
+            "normal3": "Since the success of this field lies in setting goals correctly, ",
+            "normal4": "achieving these goals depends on following proper, clear, and proven steps,",
+            "normal5": "thereby creating a smooth and flexible methodology that leads us to achieve our objectives. Based on this, we established ",
+            "bold1": "\"Unified Experts' House\"",
+            "normal6": "to bring together our experts with entrepreneurs and business owners, enabling them to reach their goals through a specialized expert in their field with proven practical experience."
+        }
+    },
+    "exp2": {
+        "title": "Expertise",
+        "txt": {
+            "normal": "Our experts have worked in different fields and leading sectors. Here, we will showcase the organizations our experts joined during their professional careers."
+        },
+        "btnMore": "View More"
+    },
+    "works2": {
+        "title": "Specializations",
+        "caption1": "Governance of Boards of Directors",
+        "caption2": "Governance of Private and Family Companies",
+        "caption3": "Business and Strategy Development",
+        "caption4": "Human Capital Strategies",
+        "caption5": "Attracting and Building Human Talent",
+        "caption6": "Legal Consultations",
+        "caption7": "Research and Marketing Strategies",
+        "caption8": "Finance and Islamic Sukuk",
+        "btnMore": "View More"
+    },
+    "clients": {
+        "title": "Our Prominent Clients",
+        "caption1": "Digitization Solutions Brokerage Company",
+        "caption2": "National Business Development",
+        "caption3": "Imkan Arabia",
+        "caption4": "Imdad Food",
+        "caption5": "Green Papers School"
+    },
+    "features": {
+        "title": "What Sets Us Apart?",
+        "txt": {
+            "normal1": "The uniqueness we added in Unified Experts' House is the consultative supervision service. We placed ourselves on your side, following up on the work from your location to ensure the quality of the studies provided to you. We discuss them on your behalf, review them, and ensure their accuracy and feasibility.",
+            "normal2": "Beautiful reports and ambitious data need someone to analyze them with an expert's eye to ensure their effectiveness. That’s why our experts lay the foundation with their knowledge, document the rules and pillars with their expertise, and supervise the process with their experience. This creates a structure of information that protects our goals."
+        }
+    }
 }

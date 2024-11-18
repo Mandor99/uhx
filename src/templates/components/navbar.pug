@@ -1,34 +1,34 @@
 nav.navbar.fixed-top.navbar-expand-lg.bg-primary
   .container
-    a.navbar-brand.brand(href='/')
-        img.logo-dimension(src="./imgs/logos/UHX white.svg", alt="uhx logo")
+    a.navbar-brand.brand(href='index.html')
+        img.logo-dimension(src="../imgs/logos/UHX white.svg", alt="uhx logo")
     button.navbar-toggler.collapsed.position-relative.d-flex.d-lg-none.flex-column.justify-content-around.icon-button(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
       span.toggler-icon.top-bar
       span.toggler-icon.mid-bar
       span.toggler-icon.bottom-bar
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.navbar-nav-scroll.me-auto.mb-2.mb-lg-0.gap-3
-        -const navItem1 = {name: 'الرئيسية', href: '/'}
-        -const navItem2 = {name: "من نحن", href: 'about.html'}
-        -const navItem3 = {name: 'خدماتنا', href: 'service.html'}
-        -const navItem4 = {name: "آلية العمل", href: 'how.html'}
-        -const navItem5 = {name: 'الخبرات', href: 'experience.html'}
+        -const navItem1 = {name: locales.navbar['navItemm1'], href: 'index.html'}
+        -const navItem2 = {name: locales.navbar['navItem2'], href: 'about.html'}
+        -const navItem3 = {name: locales.navbar['navItem3'], href: 'service.html'}
+        -const navItem4 = {name: locales.navbar['navItem4'], href: 'how.html'}
+        -const navItem5 = {name: locales.navbar['navItem5'], href: 'experience.html'}
         -const navItems = [navItem1, navItem2, navItem3, navItem4, navItem5 ]
         each item in navItems
           li.nav-item
             a.nav-link.text-white.fs-6.fw-normal.underline-link.px-0.text-uppercase.text-center.pb-3(aria-current='page', href=`${item.href}`, data-toggle='collapse') #{item.name}
         li.nav-item.dropdown
           a.nav-link.dropdown-toggle.text-white.fs-6.fw-normal.text-uppercase.text-center(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
-            | نحن معك دائما
+            | #{locales.navbar['navDropDownBtn']}
           ul.dropdown-menu.bg-primary-dark.py-0
-            -const dropdownItem1 = {name: "طلب استشارة", href: 'consultant.html'}
-            -const dropdownItem2 = {name: "انضم كخبير", href: 'join.html'}
-            -const dropdownItem3 = {name: 'التراخيص', href: 'license.html'}
+            -const dropdownItem1 = {name: `${locales.navbar['dropDownItem1']}`, href: 'consultant.html'}
+            -const dropdownItem2 = {name: locales.navbar['dropDownItem2'], href: 'join.html'}
+            -const dropdownItem3 = {name: locales.navbar['dropDownItem3'], href: 'license.html'}
             -const dropdownItems = [dropdownItem1, dropdownItem2, dropdownItem3]
             each item in dropdownItems
               li.text-center
                 a.dropdown-item.text-white.fs-6.fw-normal.text-uppercase.text-center.circle-effect(href=`${item.href}`) #{item.name}
-        li.nav-item.mx-auto.pb-3: button.download-btn.btn.rounded-button.btn-primary.d-flex.align-items-center.fs-6.gap-2.color-primary.bg-white.border-0
-          img(src="./imgs/icons/download (1).png", alt="download profile")
-          | الملف الشخصي
+        li.nav-item.mx-auto.pb-3: button#langBtn.download-btn.btn.rounded-button.btn-primary.d-flex.align-items-center.fs-6.gap-2.color-primary.bg-white.border-0
+          //- img(src="../imgs/icons/download (1).png", alt="download profile")
+          | #{locales.navbar['languageBtn']}
 
