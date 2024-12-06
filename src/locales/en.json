@@ -133,6 +133,25 @@
         "step4": "Execution Time and Cost",
         "step5": "Then we ask you to set an appointment for the expert to explain in detail what will be done."
     },
+    "timeline2": {
+        "title": "Consultation Stages",
+        "step1": {
+            "heading": "Assessment and Diagnosis",
+            "desc": "Collecting and analyzing data to understand challenges and needs"
+        },
+        "step2": {
+            "heading": "Defining Scope of Work",
+            "desc": "Clarifying objectives, activities, and timeframe"
+        },
+        "step3": {
+            "heading": "Planning and Implementation",
+            "desc": "Developing a clear strategy and implementing solutions with ongoing support"
+        },
+        "step4": {
+            "heading": "Evaluation and Final Recommendations",
+            "desc": "Measuring results against objectives and providing sustainable recommendations"
+        }
+    },
     "exp": {
         "title": "Where Our Experts Worked",
         "txt": {
@@ -207,6 +226,12 @@
             "normal6": "to bring together our experts with entrepreneurs and business owners, enabling them to reach their goals through a specialized expert in their field with proven practical experience."
         }
     },
+    "start": {
+        "title": "The Beginning",
+        "txt": {
+            "normal": "<span class='color-primary fw-bold'>\"Unified Experts House\"</span> was established in 2023 to become a leading Saudi institution combining expertise and consultancy. It serves as a meeting point for experts, entrepreneurs, and business owners, offering professional consulting solutions that contribute to achieving their goals through well-planned steps and effective methodologies ensuring stability and success."
+        }
+    },
     "exp2": {
         "title": "Expertise",
         "txt": {
@@ -232,7 +257,10 @@
         "caption2": "National Business Development",
         "caption3": "Imkan Arabia",
         "caption4": "Imdad Food",
-        "caption5": "Green Papers School"
+        "caption5": "Green Papers School",
+        "caption6": "AWJ Holding Company",
+        "caption7": "ALBALAD ALAMEEN",
+        "caption8": "Shezan"
     },
     "features": {
         "title": "What Sets Us Apart?",

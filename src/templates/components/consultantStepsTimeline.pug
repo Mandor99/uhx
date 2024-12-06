@@ -1,0 +1,12 @@
+section.consultant-steps
+    +sectionTitle(`${locales.timeline2["title"]}`)
+    ul
+        -const step1 = {title: `${locales.timeline2["step1"]["heading"]}`, desc: `${locales.timeline2["step1"]["desc"]}`, aos: "fade-right"}
+        -const step2 = {title: `${locales.timeline2["step2"]["heading"]}`, desc: `${locales.timeline2["step2"]["desc"]}`, aos: "fade-left"}
+        -const step3 = {title: `${locales.timeline2["step3"]["heading"]}`, desc: `${locales.timeline2["step3"]["desc"]}`, aos: "fade-right"}
+        -const step4 = {title: `${locales.timeline2["step4"]["heading"]}`, desc: `${locales.timeline2["step4"]["desc"]}`, aos: "fade-left"}
+        -const steps = [step1, step2, step3, step4]
+        each step, index in steps
+            li(data-aos=`${step.aos}`)
+                h4.step-title(class=`circle-${index+1}`) #{step.title}
+                p.desc.text-center #{step.desc}

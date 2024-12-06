@@ -655,6 +655,173 @@ p > span {
   content: "5";
 }
 
+/***********************************************************************/
+/***********************************************************************/
+.consultant-steps {
+  direction: ltr !important;
+  --color: rgba(30, 30, 30);
+  --bgColor: rgba(245, 245, 245);
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  color: var(--color);
+  background: var(--bgColor);
+  /* line */
+  /* columns*/
+  /* row gaps */
+  /* card */
+  /* step-title */
+  /* step-title flap */
+  /* circle */
+  /* desc */
+  /* shadows */
+}
+.consultant-steps h1 {
+  text-align: center;
+}
+.consultant-steps ul {
+  --col-gap: 2rem;
+  --row-gap: 4rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  -moz-column-gap: var(--col-gap);
+       column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+.consultant-steps ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1/span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+.consultant-steps ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+.consultant-steps ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+.consultant-steps ul li .step-title {
+  --titleH: 3rem;
+  height: var(--titleH);
+  margin-inline: calc(var(--inlineP) * -1);
+  text-align: center;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+  position: relative;
+  border-radius: calc(var(--titleH) / 2) 0 0 calc(var(--titleH) / 2);
+}
+.consultant-steps ul li .step-title::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--color-primary);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+.consultant-steps ul li .step-title.circle-1::after {
+  content: "1";
+}
+.consultant-steps ul li .step-title.circle-2::after {
+  content: "2";
+}
+.consultant-steps ul li .step-title.circle-3::after {
+  content: "3";
+}
+.consultant-steps ul li .step-title.circle-4::after {
+  content: "4";
+}
+.consultant-steps ul li .step-title::after {
+  position: absolute;
+  aspect-ratio: 1;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: 50%;
+  color: var(--color-primary) !important;
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  line-height: 50px;
+  font-weight: 400;
+}
+.consultant-steps ul li .desc {
+  background: #fff;
+  position: relative;
+  padding-inline: 1.5rem;
+  margin-top: -6px;
+  padding-top: 1rem;
+  padding-block-end: 1.5rem;
+  font-weight: 600;
+  box-shadow: 1px 2px 80px 0 rgba(0, 0, 0, 0.1);
+}
+.consultant-steps ul li .desc::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.consultant-steps ul li .desc::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+@media (min-width: 40rem) {
+  .consultant-steps {
+    /* start second card */
+  }
+  .consultant-steps ul {
+    --row-gap: 10rem;
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  .consultant-steps ul::before {
+    grid-column: 2;
+  }
+  .consultant-steps ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  .consultant-steps ul li:nth-child(even) {
+    grid-column: 3;
+  }
+  .consultant-steps ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+  .consultant-steps ul li:nth-child(odd) .step-title::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+  .consultant-steps ul li:nth-child(odd) .step-title::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  .consultant-steps ul li:nth-child(odd) .step-title {
+    border-radius: 0 calc(var(--titleH) / 2) calc(var(--titleH) / 2) 0;
+  }
+}
+
 .intro {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1033,6 +1200,19 @@ p > span {
   height: 85px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.start-about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .start-about {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    gap: 2rem;
+  }
 }
 
 .license {

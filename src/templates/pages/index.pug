@@ -36,6 +36,7 @@ block content
             .col-12.col-lg-4
                a(href='https://www.linkedin.com/in/rawad-zarea-')
                   img.img-fluid.img-ceo(src="../imgs/background/executive.png", alt="CEO", data-aos='zoom-in-left')
+   include ../components/startAbout
    include ../components/cards
    section.exp.bg-gray2.overflow-x-hidden
       //- .container
@@ -72,6 +73,7 @@ block content
          .exp-btn.text-center.pt-4
             a.works-btn.btn.circle-btn.button-light(href='service.html') #{locales.works2["btnMore"]}
    include ../components/timeline
+   include ../components/consultantStepsTimeline
    section.our-clients
       .container
          +sectionTitle(`${locales.clients["title"]}`)
@@ -81,7 +83,10 @@ block content
             -const client3 = {img: "3.png", title: `${locales.clients["caption3"]}`}
             -const client4 = {img: "4.png", title: `${locales.clients["caption4"]}` }
             -const client5 = {img: "5.png", title: `${locales.clients["caption5"]}`}
-            -const clients = [client1, client2, client3, client4, client5]
+            -const client6 = {img: "6.png", title: `${locales.clients["caption6"]}`}
+            -const client7 = {img: "7.png", title: `${locales.clients["caption7"]}`}
+            -const client8 = {img: "8.png", title: `${locales.clients["caption8"]}`}
+            -const clients = [client1, client2, client3, client4, client5, client6, client7, client8]
             each client in clients
                figure.slider-figure.text-center.item.client-fig.shadow.d-flex.flex-column.align-items-center
                   img.img-fluid.client-logo(src=`../imgs/logos/client${client.img}`, alt="client")

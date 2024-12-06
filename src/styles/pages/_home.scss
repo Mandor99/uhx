@@ -418,6 +418,22 @@
   }
 }
 
+.start-about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  @include responsiveMax(tab) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    gap: 2rem;
+
+    // .custom-txt {
+    //   width: 100% !important;
+    // }
+  }
+}
+
 .license {
   padding-top: 3rem;
   padding-bottom: 3rem;
